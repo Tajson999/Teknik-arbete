@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>/// Collision check
 phy_fixed_rotation = true;
+spd = 5
 </string>
           </argument>
         </arguments>
@@ -58,20 +59,43 @@ var w_key = keyboard_check(ord('W'));
 
 // Move left
 if (a_key) {
-     phy_position_x -= 2;
+     phy_position_x -= spd;
 }
 // Move right
 if (d_key) {
-     phy_position_x += 2;
+     phy_position_x += spd;
 }
 // Move down
 if (s_key) {
-     phy_position_y += 2;
+     phy_position_y += spd;
 }
 // Move up
 if (w_key) {
-     phy_position_y -= 2;
+     phy_position_y -= spd;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_test_wall">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Collison with wall
 </string>
           </argument>
         </arguments>

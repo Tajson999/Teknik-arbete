@@ -6,8 +6,19 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_test_player</sprite>
     <sprite>sprites\spr_test_wall</sprite>
+    <sprites name="Player">
+      <sprite>sprites\spr_test_player</sprite>
+      <sprite>sprites\spr_player_right</sprite>
+      <sprite>sprites\spr_player_left</sprite>
+      <sprite>sprites\spr_player_up</sprite>
+      <sprite>sprites\spr_player_down</sprite>
+      <sprite>sprites\spr_player_hitbox_up</sprite>
+      <sprite>sprites\spr_player_hitbox_down</sprite>
+      <sprite>sprites\spr_player_hitbox_right</sprite>
+      <sprite>sprites\spr_player_hitbox_left</sprite>
+      <sprite>sprites\spr_player_move</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -16,6 +27,7 @@
     <object>objects\obj_test_wall</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\testing</room>
     <room>rooms\room0</room>
   </rooms>
   <help>

@@ -80,14 +80,45 @@ if(mouse_check_button_pressed(mb_left)){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///move
+            <string>///movement and rotation
+var turn = point_direction(x,y,target_x,target_y);
+
 if point_distance(x,y, target_x, target_y) &lt;= speed{
     speed = 0
     x = target_x
     y = target_y
+    sprite_index = spr_test_player
 }else{
+if(turn &gt; 100 &amp;&amp; turn &lt; 170){
+    sprite_index = spr_player_up_left
+}
+if(turn &gt; 190 &amp;&amp; turn &lt; 260){
+    sprite_index = spr_player_down_left
+}
+if(turn &gt; 280 &amp;&amp; turn &lt; 350){
+    sprite_index = spr_player_down_right
+}
+if(turn &lt; 80 &amp;&amp; turn &gt; 10){
+    sprite_index = spr_player_up_right
+}
+if(turn &lt; 10 || turn &gt; 350){
+    sprite_index = spr_player_right
+}
+if(turn &lt; 100 &amp;&amp; turn &gt; 80){
+    sprite_index = spr_player_up
+}
+if(turn &lt; 190 &amp;&amp; turn &gt; 170){
+    sprite_index = spr_player_left
+}
+if(turn &lt; 280 &amp;&amp; turn &gt; 260){
+    sprite_index = spr_player_down
+}
+
+
 move_towards_point(target_x,target_y,10)
 }
+
+
 </string>
           </argument>
         </arguments>

@@ -27,6 +27,9 @@
       <sprite>sprites\spr_player_hitbox_down_right</sprite>
     </sprites>
     <sprite>sprites\spr_tree</sprite>
+    <sprite>sprites\spr_tree1</sprite>
+    <sprite>sprites\spr_tree2</sprite>
+    <sprite>sprites\spr_tree3</sprite>
     <sprite>sprites\spr_branch</sprite>
   </sprites>
   <backgrounds name="background"/>
@@ -36,7 +39,11 @@
     <object>objects\obj_test_wall</object>
     <object>objects\obj_player_hitbox</object>
     <object>objects\obj_tree</object>
+    <object>objects\obj_tree1</object>
+    <object>objects\obj_tree2</object>
+    <object>objects\obj_tree3</object>
     <object>objects\obj_branch</object>
+    <object>objects\obj_tree_counter</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\testing</room>

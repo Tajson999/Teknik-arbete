@@ -25,10 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if collision_circle(obj_tree.x,obj_tree.y,64,obj_player_hitbox,true,true) = true &amp;&amp; keyboard_check_pressed(e){
-    instance_create(x,y,obj_branch)
+            <string>if (collision_circle(x,y,32,obj_player_hitbox,true,true) &amp;&amp; keyboard_check_pressed(ord('E'))){
+    instance_create(x,y,obj_tree1)
     instance_destroy()
-}
+}// 
 </string>
           </argument>
         </arguments>

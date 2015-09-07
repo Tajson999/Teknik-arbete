@@ -44,6 +44,7 @@
     <object>objects\obj_tree3</object>
     <object>objects\obj_branch</object>
     <object>objects\obj_tree_counter</object>
+    <object>objects\object9</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\testing</room>

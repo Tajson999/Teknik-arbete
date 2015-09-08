@@ -32,7 +32,7 @@ global.treecounter = 0
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,7 +49,13 @@ global.treecounter = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(96,704,global.treecounter)
+            <string>//draw_text(64,704,string(global.treecounter))
+
+draw_set_color(c_white);
+draw_set_font(AmmoFont);
+var drawstring;
+drawstring = "Wood: " + string(treecounter)
+draw_text(view_xview[0], view_)
 </string>
           </argument>
         </arguments>

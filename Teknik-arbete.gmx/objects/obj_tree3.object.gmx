@@ -26,10 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>if (collision_circle(x,y,32,obj_player_hitbox,true,true) &amp;&amp; keyboard_check_pressed(ord('E'))){
-    instance_create(x,y,obj_tree3)
     instance_destroy()
-    global.treecounter =+ 1
-}// 
+    instance_create(x,y,obj_branch)
+}
 </string>
           </argument>
         </arguments>

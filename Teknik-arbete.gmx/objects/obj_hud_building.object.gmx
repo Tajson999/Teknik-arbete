@@ -4,11 +4,11 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,8 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>globalvar treecounter
-global.treecounter = 0
+            <string>if (collision_rectangle(view_xview[0]+4, view_yview[0]+708,view_xview[0]+136,view_yview[0]+764, obj_mouse, false, true) &amp;&amp; mouse_check_button_pressed(mb_left)){
+    instance_create(64,64,obj_bulding_menu)
+}
 </string>
           </argument>
         </arguments>
@@ -49,11 +50,12 @@ global.treecounter = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//draw text
-
-var drawstring;
-drawstring = "Wood: " + string(treecounter)
-draw_text(view_xview[0]+904, view_yview[0]+32, drawstring)
+            <string>///draw box
+draw_set_alpha(0.3)
+draw_set_color(c_dkgray)
+draw_rectangle(view_xview[0]+4, view_yview[0]+708,view_xview[0]+136,view_yview[0]+764,false)
+draw_set_color(c_white)
+draw_set_alpha(1)
 </string>
           </argument>
         </arguments>

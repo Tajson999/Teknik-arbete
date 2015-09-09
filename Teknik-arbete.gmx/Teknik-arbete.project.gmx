@@ -43,7 +43,8 @@
     <object>objects\obj_tree2</object>
     <object>objects\obj_tree3</object>
     <object>objects\obj_branch</object>
-    <object>objects\_</object>
+    <object>objects\obj_treecounter</object>
+    <object>objects\obj_hud</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\testing</room>

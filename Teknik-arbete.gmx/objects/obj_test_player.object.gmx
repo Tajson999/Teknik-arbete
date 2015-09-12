@@ -33,6 +33,9 @@ globalvar target_x
 global.target_x = x
 globalvar target_y
 global.target_y = y
+
+globalvar movment
+global.movment = true
 </string>
           </argument>
         </arguments>
@@ -56,6 +59,8 @@ global.target_y = y
           <argument>
             <kind>1</kind>
             <string>///set target
+if(movment = true){
+
 if(mouse_check_button_pressed(mb_left)){
     global.target_x = mouse_x
     global.target_y = mouse_y
@@ -121,7 +126,7 @@ if(turn &lt; 280 &amp;&amp; turn &gt; 260){
 
 move_towards_point(target_x,target_y,10)
 }
-
+}
 </string>
           </argument>
         </arguments>

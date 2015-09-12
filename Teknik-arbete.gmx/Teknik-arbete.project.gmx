@@ -32,6 +32,8 @@
     <sprite>sprites\spr_tree3</sprite>
     <sprite>sprites\spr_branch</sprite>
     <sprite>sprites\spr_mouse</sprite>
+    <sprite>sprites\spr_hud_buildings</sprite>
+    <sprite>sprites\spr_building_menu</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>

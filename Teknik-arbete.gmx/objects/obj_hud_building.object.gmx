@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="4" ename="&lt;undefined&gt;">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -26,7 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>///create building menu
-if (mouse_check_button(mb_left) &amp;&amp; (global.building_menu == false)){
+if (mouse_check_button(mb_left) &amp;&amp; (global.building_menu == false) &amp;&amp; 
+collision_rectangle(obj_hud_building.x,obj_hud_building.y,obj_hud_building.x+120,obj_hud_building.y+56,obj_mouse,true,false)){
     instance_create(10,10,obj_bulding_menu)
     global.building_menu = true
     global.movment = false

@@ -54,8 +54,11 @@
     <object>objects\obj_bulding_menu</object>
     <object>objects\obj_var_creator</object>
     <object>objects\obj_hud_back_button</object>
+    <object>objects\obj_mouse</object>
   </objects>
-  <rooms name="rooms"/>
+  <rooms name="rooms">
+    <room>rooms\Testing_rm</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>

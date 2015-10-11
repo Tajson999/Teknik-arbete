@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="4" ename="obj_mouse">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,13 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (collision_rectangle(view_xview[0], view_yview[0]+704, view_xview[0]+992, view_yview[0]+736, obj_mouse, true, true) == true ){
-    global.movment = false
-}else {
+            <string>if (collision_rectangle(0,704,1024,768,obj_mouse,true,false) == noone){
     global.movment = true
+}else{
+    global.movment = false
 }
-
-
 
 </string>
           </argument>

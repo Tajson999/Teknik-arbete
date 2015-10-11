@@ -33,6 +33,7 @@
     <sprite>sprites\spr_branch</sprite>
     <sprite>sprites\spr_mouse</sprite>
     <sprite>sprites\spr_hud_buildings</sprite>
+    <sprite>sprites\spr_hud_back_button</sprite>
     <sprite>sprites\spr_building_menu</sprite>
     <sprite>sprites\spr_hud_down</sprite>
   </sprites>
@@ -52,6 +53,8 @@
     <object>objects\obj_hud_building</object>
     <object>objects\obj_bulding_menu</object>
     <object>objects\obj_mouse</object>
+    <object>objects\obj_var_creator</object>
+    <object>objects\obj_hud_back_button</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\testing</room>

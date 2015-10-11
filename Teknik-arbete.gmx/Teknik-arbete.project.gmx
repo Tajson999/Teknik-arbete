@@ -51,10 +51,7 @@
     <object>objects\obj_hud</object>
     <object>objects\obj_hud_building</object>
     <object>objects\obj_bulding_menu</object>
-<<<<<<< HEAD
-    <object>objects\obj_var_creator</object>
-    <object>objects\obj_hud_back_button</object>
-=======
+
     <object>objects\obj_mouse</object>
 >>>>>>> parent of e2c0529... Hud and back button for hud
   </objects>

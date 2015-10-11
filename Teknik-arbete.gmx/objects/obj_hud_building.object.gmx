@@ -25,10 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///create building menu
-if (mouse_check_button(mb_left) &amp;&amp; (global.building_menu == false)){
+            <string>if (mouse_check_button(mb_left)){
     instance_create(10,10,obj_bulding_menu)
-    global.building_menu = true
     global.movment = false
 }
 </string>

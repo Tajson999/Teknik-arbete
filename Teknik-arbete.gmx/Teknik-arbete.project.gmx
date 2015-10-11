@@ -52,14 +52,10 @@
     <object>objects\obj_hud</object>
     <object>objects\obj_hud_building</object>
     <object>objects\obj_bulding_menu</object>
-    <object>objects\obj_mouse</object>
     <object>objects\obj_var_creator</object>
     <object>objects\obj_hud_back_button</object>
   </objects>
-  <rooms name="rooms">
-    <room>rooms\testing</room>
-    <room>rooms\room0</room>
-  </rooms>
+  <rooms name="rooms"/>
   <help>
     <rtf>help.rtf</rtf>
   </help>

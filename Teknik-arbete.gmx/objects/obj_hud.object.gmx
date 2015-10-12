@@ -25,11 +25,36 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (collision_rectangle(0,704,1024,768,obj_mouse,true,false) == noone){
+            <string>///set movment to true again (if menu == false)
+if (global.menu == false){
+
+if (collision_rectangle(0,704,1024,768,obj_mouse,true,false) == noone){
     global.movment = true
-}else{
-    global.movment = false
 }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_mouse">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.movment = false
 
 </string>
           </argument>

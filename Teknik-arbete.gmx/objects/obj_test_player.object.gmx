@@ -28,6 +28,7 @@
             <string>/// Collision check
 //phy_fixed_rotation = true;
 //spd = 5
+instance_create(64,64,obj_player_hitbox)
 
 globalvar target_x 
 global.target_x = x
@@ -126,6 +127,8 @@ if(turn &lt; 280 &amp;&amp; turn &gt; 260){
 
 move_towards_point(target_x,target_y,10)
 }
+}else if(global.movment == false){
+    speed = 0
 }
 </string>
           </argument>

@@ -36,6 +36,8 @@
     <sprite>sprites\spr_hud_back_button</sprite>
     <sprite>sprites\spr_building_menu</sprite>
     <sprite>sprites\spr_hud_down</sprite>
+    <sprite>sprites\spr_building_workstation</sprite>
+    <sprite>sprites\spr_building_menu_workstation</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -55,6 +57,10 @@
     <object>objects\obj_var_creator</object>
     <object>objects\obj_hud_back_button</object>
     <object>objects\obj_mouse</object>
+    <object>objects\obj_building_workstation</object>
+    <object>objects\obj_grid_create</object>
+    <object>objects\obj_building_menu_workstation_button</object>
+    <object>objects\obj_building_workstation_placement</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Testing_rm</room>

@@ -37,6 +37,7 @@
     <sprite>sprites\spr_building_menu</sprite>
     <sprite>sprites\spr_hud_down</sprite>
     <sprite>sprites\spr_building_workstation</sprite>
+    <sprite>sprites\spr_building_workstation_place</sprite>
     <sprite>sprites\spr_building_menu_workstation</sprite>
   </sprites>
   <backgrounds name="background"/>

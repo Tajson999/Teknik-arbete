@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>counter = 5
+red = 0
 </string>
           </argument>
         </arguments>
@@ -93,9 +94,35 @@ instance_destroy()
 global.menu = false
 }
 
+
+
 /*gridx = (mouse_x div 32)*32
 gridy = (mouse_y div 32)*32
 instance_create(gridx, gridy, obj_building_workstation)*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (red == 1){
+    red = 0
+    image_index = 0
+}
 </string>
           </argument>
         </arguments>
@@ -127,6 +154,27 @@ instance_create(gridx, gridy, obj_building_workstation)*/
           <argument>
             <kind>0</kind>
             <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>red = 1
+</string>
           </argument>
         </arguments>
       </action>

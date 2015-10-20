@@ -25,8 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(obj_tree.x, obj_tree.y, obj_branch)
+            <string>instance_create(Ntree.x, Ntree.y, obj_branch)
 instance_destroy()
+global.movment = true
 </string>
           </argument>
         </arguments>
@@ -123,6 +124,7 @@ instance_destroy()
             <kind>1</kind>
             <string>if (collision_circle(x,y,32,obj_player_hitbox,true,true) &amp;&amp; keyboard_check_pressed(ord('E'))){
     alarm[0] = 10;
+    global.movment = false
 }
 </string>
           </argument>

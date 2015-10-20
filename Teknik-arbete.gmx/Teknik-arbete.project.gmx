@@ -48,9 +48,6 @@
     <object>objects\obj_test_wall</object>
     <object>objects\obj_player_hitbox</object>
     <object>objects\obj_tree</object>
-    <object>objects\obj_tree1</object>
-    <object>objects\obj_tree2</object>
-    <object>objects\obj_tree3</object>
     <object>objects\obj_branch</object>
     <object>objects\obj_treecounter</object>
     <object>objects\obj_hud</object>
@@ -71,6 +68,7 @@
       <object>objects\obj_building_menu_workstation_button</object>
       <object>objects\obj_building_workstation</object>
     </objects>
+    <object>objects\obj_test</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Testing_rm</room>

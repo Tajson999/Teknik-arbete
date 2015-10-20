@@ -64,6 +64,9 @@
     <object>objects\obj_grid_create</object>
     <object>objects\obj_building_menu_workstation_button</object>
     <object>objects\obj_building_workstation_placement</object>
+    <objects name="Debug">
+      <object>objects\obj_debug_restart</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\Testing_rm</room>

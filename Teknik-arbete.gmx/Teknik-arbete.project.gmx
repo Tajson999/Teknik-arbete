@@ -40,7 +40,9 @@
     <sprite>sprites\spr_building_workstation_place</sprite>
     <sprite>sprites\spr_building_menu_workstation</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_test_player</object>

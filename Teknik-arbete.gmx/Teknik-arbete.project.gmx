@@ -45,7 +45,6 @@
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\obj_test_player</object>
     <object>objects\obj_test_wall</object>
     <object>objects\obj_player_hitbox</object>
     <object>objects\obj_tree</object>
@@ -60,12 +59,17 @@
     <object>objects\obj_var_creator</object>
     <object>objects\obj_hud_back_button</object>
     <object>objects\obj_mouse</object>
-    <object>objects\obj_building_workstation</object>
     <object>objects\obj_grid_create</object>
-    <object>objects\obj_building_menu_workstation_button</object>
-    <object>objects\obj_building_workstation_placement</object>
     <objects name="Debug">
       <object>objects\obj_debug_restart</object>
+    </objects>
+    <objects name="Player">
+      <object>objects\obj_test_player</object>
+    </objects>
+    <objects name="Buildings/placeable items">
+      <object>objects\obj_building_workstation_placement</object>
+      <object>objects\obj_building_menu_workstation_button</object>
+      <object>objects\obj_building_workstation</object>
     </objects>
   </objects>
   <rooms name="rooms">

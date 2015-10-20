@@ -37,6 +37,8 @@ global.target_y = y
 
 globalvar movment
 global.movment = true
+
+globalvar Ntree
 </string>
           </argument>
         </arguments>
@@ -151,7 +153,7 @@ move_towards_point(target_x,target_y,10)
           <argument>
             <kind>1</kind>
             <string>///nearest tree
-Ntree = instance_nearest(obj_test_player.x, obj_test_player.y, obj_tree)
+global.Ntree = instance_nearest(obj_test_player.x, obj_test_player.y, obj_tree)
 </string>
           </argument>
         </arguments>

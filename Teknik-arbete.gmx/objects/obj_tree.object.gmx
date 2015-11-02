@@ -3,7 +3,7 @@
   <spriteName>spr_tree</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>-5</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,9 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(global.Ntree.x, global.Ntree.y, obj_branch)
-instance_destroy()
+            <string>tree_nearest = instance_nearest(obj_test_player.x, obj_test_player.y, obj_tree)
+
+instance_create((tree_nearest).x, (tree_nearest).y, obj_branch)
 global.movment = true
+global.hud_override = false
+
+instance_destroy()
+
 </string>
           </argument>
         </arguments>
@@ -52,6 +57,7 @@ global.movment = true
             <kind>1</kind>
             <string>    sprite_index = spr_tree3
     alarm[4] = 10
+    global.movment = false
 </string>
           </argument>
         </arguments>
@@ -76,6 +82,7 @@ global.movment = true
             <kind>1</kind>
             <string>    sprite_index = spr_tree2
     alarm[3] = 10
+    global.movment = false
 </string>
           </argument>
         </arguments>
@@ -100,6 +107,8 @@ global.movment = true
             <kind>1</kind>
             <string>    sprite_index = spr_tree1
     alarm[1] = 10
+    global.movment = false
+    global.hud_override = true
 </string>
           </argument>
         </arguments>
@@ -124,6 +133,8 @@ global.movment = true
             <kind>1</kind>
             <string>if (collision_circle(x,y,32,obj_player_hitbox,true,true) &amp;&amp; keyboard_check_pressed(ord('E'))){
     alarm[0] = 10;
+    obj_test_player.speed = 0
+    global.hud_override = true
     global.movment = false
 }
 </string>

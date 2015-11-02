@@ -90,7 +90,7 @@ if (counter &gt; 0){
 
 
 instance_create(obj_building_workstation_placement.x, obj_building_workstation_placement.y, obj_building_workstation)
-
+global.treecounter -= 5
 instance_destroy()
 global.menu = false
 }

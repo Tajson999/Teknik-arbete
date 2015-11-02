@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>if( collision_rectangle(obj_hud_back_button.x, obj_hud_back_button.y, obj_hud_back_button.x+84, obj_hud_back_button.y+39,obj_mouse,true,false) != noone &amp;&amp; global.building_menu == true) &amp;&amp; mouse_check_button_pressed(mb_left){
     global.building_menu = false
+    global.menu = false
+    global.movment = true
 }
 if global.building_menu == false{
     instance_destroy()

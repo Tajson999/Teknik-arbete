@@ -3,7 +3,7 @@
   <spriteName>spr_player_up</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-5</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -62,12 +62,12 @@ globalvar Ntree
           <argument>
             <kind>1</kind>
             <string>///set target
-if(movment = true){
+if(global.movment == true){
 
 if(mouse_check_button_pressed(mb_left)){
     global.target_x = mouse_x
     global.target_y = mouse_y
-};
+}
 
 ///movement and rotation
 var turn = point_direction(x,y,target_x,target_y);
@@ -129,31 +129,7 @@ if(turn &lt; 280 &amp;&amp; turn &gt; 260){
 
 move_towards_point(target_x,target_y,10)
 }
-}else if(global.movment == false){
-    speed = 0
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///nearest tree
-global.Ntree = instance_nearest(obj_test_player.x, obj_test_player.y, obj_tree)
 </string>
           </argument>
         </arguments>

@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( collision_rectangle(obj_building_menu_workstation_button.x, obj_building_menu_workstation_button.y, obj_building_menu_workstation_button.x+64, obj_building_menu_workstation_button.y+64,obj_mouse, true, true) != noone &amp;&amp; global.building_menu == true) &amp;&amp; mouse_check_button_pressed(mb_left){
+            <string>if collision_rectangle(obj_building_menu_workstation_button.x, obj_building_menu_workstation_button.y, obj_building_menu_workstation_button.x+64, obj_building_menu_workstation_button.y+64,obj_mouse, true, true) != noone &amp;&amp; global.building_menu == true &amp;&amp; mouse_check_button_pressed(mb_left) &amp;&amp; (global.treecounter &gt;= 5){
    global.building_menu = false
    global.movment = false
    instance_create(0,0,obj_building_workstation_placement)

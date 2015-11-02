@@ -26,11 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>///set movment to true again (if menu == false)
-if (global.menu == false){
+if (global.hud_override == false){
+    if (global.menu == false){
 
-if (collision_rectangle(0,704,1024,768,obj_mouse,true,false) == noone){
-    global.movment = true
-}
+        if (collision_rectangle(0,704,1024,768,obj_mouse,true,false) == noone){
+        global.movment = true
+        }
+    }
 }
 </string>
           </argument>

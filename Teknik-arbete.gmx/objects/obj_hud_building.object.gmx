@@ -31,6 +31,7 @@ collision_rectangle(obj_hud_building.x,obj_hud_building.y,obj_hud_building.x+120
     instance_create(10,10,obj_bulding_menu)
     global.building_menu = true
     global.movment = false
+    global.menu = true    
 }
 </string>
           </argument>

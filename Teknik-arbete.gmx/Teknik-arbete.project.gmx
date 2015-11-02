@@ -31,6 +31,7 @@
     <sprite>sprites\spr_tree2</sprite>
     <sprite>sprites\spr_tree3</sprite>
     <sprite>sprites\spr_branch</sprite>
+    <sprite>sprites\spr_tree_spawner</sprite>
     <sprite>sprites\spr_mouse</sprite>
     <sprite>sprites\spr_hud_buildings</sprite>
     <sprite>sprites\spr_hud_back_button</sprite>
@@ -46,7 +47,6 @@
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_test_wall</object>
-    <object>objects\obj_player_hitbox</object>
     <object>objects\obj_tree</object>
     <object>objects\obj_branch</object>
     <object>objects\obj_treecounter</object>
@@ -62,6 +62,7 @@
     </objects>
     <objects name="Player">
       <object>objects\obj_test_player</object>
+      <object>objects\obj_player_hitbox</object>
     </objects>
     <objects name="Buildings/placeable items">
       <object>objects\obj_building_workstation_placement</object>
@@ -69,6 +70,7 @@
       <object>objects\obj_building_workstation</object>
     </objects>
     <object>objects\obj_test</object>
+    <object>objects\obj_tree_spawner</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Testing_rm</room>

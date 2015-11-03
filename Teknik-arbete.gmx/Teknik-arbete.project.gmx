@@ -25,6 +25,9 @@
       <sprite>sprites\spr_player_hitbox_up_left</sprite>
       <sprite>sprites\spr_player_hitbox_down_left</sprite>
       <sprite>sprites\spr_player_hitbox_down_right</sprite>
+      <sprites name="Player Sprites">
+        <sprite>sprites\spr_player_alpha</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\spr_tree</sprite>
     <sprite>sprites\spr_tree1</sprite>

@@ -27,6 +27,9 @@
             <kind>1</kind>
             <string>globalvar treecounter
 global.treecounter = 0
+
+globalvar stickcounter
+global.stickcounter = 0
 </string>
           </argument>
         </arguments>
@@ -51,9 +54,13 @@ global.treecounter = 0
             <kind>1</kind>
             <string>//draw text
 
-var drawstring;
+var drawstring
 drawstring = "Wood: " + string(treecounter)
 draw_text(view_xview[0]+904, view_yview[0]+32, drawstring)
+
+var drawstring1
+drawstring1 = "Sticks: " + string(stickcounter)
+draw_text(view_xview[0]+904, view_yview[0]+64, drawstring1)
 </string>
           </argument>
         </arguments>

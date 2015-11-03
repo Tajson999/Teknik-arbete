@@ -30,6 +30,9 @@ global.treecounter = 0
 
 globalvar stickcounter
 global.stickcounter = 0
+
+globalvar money
+global.money = 1000
 </string>
           </argument>
         </arguments>
@@ -56,12 +59,15 @@ global.stickcounter = 0
 
 var drawstring
 drawstring = "Wood: " + string(treecounter)
-draw_text(view_xview[0]+904, view_yview[0]+32, drawstring)
+draw_text(view_xview[0]+904, view_yview[0]+96, drawstring)
 
 var drawstring1
 drawstring1 = "Sticks: " + string(stickcounter)
 draw_text(view_xview[0]+904, view_yview[0]+64, drawstring1)
 
+var drawstring2
+drawstring2 = "Money: " + string(money)
+draw_text(view_xview[0]+904, view_yview[0]+32, drawstring2)
 </string>
           </argument>
         </arguments>

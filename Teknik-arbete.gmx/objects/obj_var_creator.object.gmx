@@ -33,6 +33,7 @@ global.menu = false
 
 globalvar hud_override
 global.hud_override = false
+
 </string>
           </argument>
         </arguments>

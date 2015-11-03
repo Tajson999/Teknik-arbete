@@ -49,7 +49,7 @@
     <object>objects\obj_test_wall</object>
     <object>objects\obj_tree</object>
     <object>objects\obj_branch</object>
-    <object>objects\obj_treecounter</object>
+    <object>objects\obj_counter</object>
     <object>objects\obj_hud</object>
     <object>objects\obj_hud_building</object>
     <object>objects\obj_bulding_menu</object>

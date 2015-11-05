@@ -40,7 +40,7 @@ global.movment = true
 
 carry_stick = false
 
-        image_speed = 5
+        image_speed = .25
 </string>
           </argument>
         </arguments>
@@ -78,65 +78,70 @@ if point_distance(x,y, target_x, target_y) &lt;= speed{
     speed = 0
     x = target_x
     y = target_y
+    image_speed = 0
 }else if(carry_stick == false){
 if(turn &gt; 100 &amp;&amp; turn &lt; 170){
     sprite_index = spr_player_up_alpha
+    image_speed = .25
     with(obj_player_hitbox){
         sprite_index = spr_player_hitbox_up_left
     }
 }
 if(turn &gt; 190 &amp;&amp; turn &lt; 260){
     sprite_index = spr_player_down_alpha
+    image_speed = .25
     with(obj_player_hitbox){
         sprite_index = spr_player_hitbox_down_left
-        image_speed = 5
+        
     }
 }
 if(turn &gt; 280 &amp;&amp; turn &lt; 350){
     sprite_index = spr_player_down_alpha
+        image_speed = .25
     with(obj_player_hitbox){
         sprite_index = spr_player_hitbox_down_right
-        image_speed = 5
     }
 }
 if(turn &lt; 80 &amp;&amp; turn &gt; 10){
     sprite_index = spr_player_up_alpha
+        image_speed = .25
     with(obj_player_hitbox){
         sprite_index = spr_player_hitbox_up_right
-        image_speed = 5
     }
 }
 if(turn &lt; 10 || turn &gt; 350){
     sprite_index = spr_player_right_alpha
+        image_speed = .25
     with(obj_player_hitbox){
         sprite_index = spr_player_hitbox_right
-        image_speed = 5
     }
 }
 if(turn &lt; 100 &amp;&amp; turn &gt; 80){
     sprite_index = spr_player_up_alpha
+        image_speed = .25
     with(obj_player_hitbox){
         sprite_index = spr_player_hitbox_up
-        image_speed = 5
     }
 }
 if(turn &lt; 190 &amp;&amp; turn &gt; 170){
     sprite_index = spr_player_left_alpha
+        image_speed = .25
     with(obj_player_hitbox){
         sprite_index = spr_player_hitbox_left
-        image_speed = 5
     }
 }
 if(turn &lt; 280 &amp;&amp; turn &gt; 260){
     sprite_index = spr_player_down_alpha
+        image_speed = .25
     with(obj_player_hitbox){
         sprite_index = spr_player_hitbox_down
-        image_speed = 5
     }
 }
 
 
 move_towards_point(target_x,target_y,10)
+
+//carry stick
 }else if (carry_stick == true){
 if(turn &gt; 100 &amp;&amp; turn &lt; 170){
     sprite_index = spr_player_up_stick
@@ -146,57 +151,60 @@ if(turn &gt; 100 &amp;&amp; turn &lt; 170){
 }
 if(turn &gt; 190 &amp;&amp; turn &lt; 260){
     sprite_index = spr_player_down_stick
+        image_speed = 5
     with(obj_player_hitbox){
         sprite_index = spr_player_hitbox_down_left
-        image_speed = 5
     }
 }
 if(turn &gt; 280 &amp;&amp; turn &lt; 350){
     sprite_index = spr_player_down_stick
+        image_speed = 5
     with(obj_player_hitbox){
         sprite_index = spr_player_hitbox_down_right
-        image_speed = 5
     }
 }
 if(turn &lt; 80 &amp;&amp; turn &gt; 10){
     sprite_index = spr_player_up_stick
+        image_speed = 5
     with(obj_player_hitbox){
         sprite_index = spr_player_hitbox_up_right
-        image_speed = 5
     }
 }
 if(turn &lt; 10 || turn &gt; 350){
     sprite_index = spr_player_right_stick
+        image_speed = 5
     with(obj_player_hitbox){
         sprite_index = spr_player_hitbox_right
-        image_speed = 5
     }
 }
 if(turn &lt; 100 &amp;&amp; turn &gt; 80){
     sprite_index = spr_player_up_stick
+        image_speed = 5
     with(obj_player_hitbox){
         sprite_index = spr_player_hitbox_up
-        image_speed = 5
     }
 }
 if(turn &lt; 190 &amp;&amp; turn &gt; 170){
     sprite_index = spr_player_left_stick
+        image_speed = 5
     with(obj_player_hitbox){
         sprite_index = spr_player_hitbox_left
-        image_speed = 5
     }
 }
 if(turn &lt; 280 &amp;&amp; turn &gt; 260){
     sprite_index = spr_player_down_stick
+        image_speed = 5
     with(obj_player_hitbox){
         sprite_index = spr_player_hitbox_down
-        image_speed = 5
     }
 }
 
 
 move_towards_point(target_x,target_y,10)
 }
+}else {
+    image_speed = 0
+    speed = 0
 }
 </string>
           </argument>

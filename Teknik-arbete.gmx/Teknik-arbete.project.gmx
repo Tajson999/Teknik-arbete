@@ -28,14 +28,21 @@
       <sprite>sprites\spr_player_hitbox_down_right</sprite>
       <sprites name="Player Sprites">
         <sprite>sprites\spr_player_down_alpha</sprite>
+<<<<<<< HEAD
         <sprite>sprites\spr_player_down_stick</sprite>
+=======
+        <sprite>sprites\spr_player_up_alpha</sprite>
+>>>>>>> origin/master
         <sprite>sprites\spr_player_down_alpha_reserve</sprite>
         <sprite>sprites\spr_player_right_alpha</sprite>
         <sprite>sprites\spr_player_right_stick</sprite>
         <sprite>sprites\spr_player_left_alpha</sprite>
+<<<<<<< HEAD
         <sprite>sprites\spr_player_left_stick</sprite>
         <sprite>sprites\spr_player_up_alpha</sprite>
         <sprite>sprites\spr_player_up_stick</sprite>
+=======
+>>>>>>> origin/master
         <sprite>sprites\spr_magic_milkman</sprite>
       </sprites>
     </sprites>

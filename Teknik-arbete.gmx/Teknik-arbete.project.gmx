@@ -3,6 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="1" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
@@ -83,6 +84,7 @@
     <objects name="NPC's">
       <object>objects\Milk_man</object>
     </objects>
+    <object>objects\obj_money_flow</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Testing_rm</room>

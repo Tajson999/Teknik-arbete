@@ -37,6 +37,10 @@ global.target_y = y
 
 globalvar movment
 global.movment = true
+
+carry_stick = false
+
+        image_speed = 5
 </string>
           </argument>
         </arguments>
@@ -59,7 +63,7 @@ global.movment = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///set target
+            <string>///set target and rotation
 if(global.movment == true){
 
 if(mouse_check_button_pressed(mb_left)){
@@ -74,7 +78,7 @@ if point_distance(x,y, target_x, target_y) &lt;= speed{
     speed = 0
     x = target_x
     y = target_y
-}else{
+}else if(carry_stick == false){
 if(turn &gt; 100 &amp;&amp; turn &lt; 170){
     sprite_index = spr_player_up_alpha
     with(obj_player_hitbox){
@@ -85,48 +89,141 @@ if(turn &gt; 190 &amp;&amp; turn &lt; 260){
     sprite_index = spr_player_down_alpha
     with(obj_player_hitbox){
         sprite_index = spr_player_hitbox_down_left
+        image_speed = 5
     }
 }
 if(turn &gt; 280 &amp;&amp; turn &lt; 350){
     sprite_index = spr_player_down_alpha
     with(obj_player_hitbox){
         sprite_index = spr_player_hitbox_down_right
+        image_speed = 5
     }
 }
 if(turn &lt; 80 &amp;&amp; turn &gt; 10){
     sprite_index = spr_player_up_alpha
     with(obj_player_hitbox){
         sprite_index = spr_player_hitbox_up_right
+        image_speed = 5
     }
 }
 if(turn &lt; 10 || turn &gt; 350){
     sprite_index = spr_player_right_alpha
     with(obj_player_hitbox){
         sprite_index = spr_player_hitbox_right
+        image_speed = 5
     }
 }
 if(turn &lt; 100 &amp;&amp; turn &gt; 80){
     sprite_index = spr_player_up_alpha
     with(obj_player_hitbox){
         sprite_index = spr_player_hitbox_up
+        image_speed = 5
     }
 }
 if(turn &lt; 190 &amp;&amp; turn &gt; 170){
     sprite_index = spr_player_left_alpha
     with(obj_player_hitbox){
         sprite_index = spr_player_hitbox_left
+        image_speed = 5
     }
 }
 if(turn &lt; 280 &amp;&amp; turn &gt; 260){
     sprite_index = spr_player_down_alpha
     with(obj_player_hitbox){
         sprite_index = spr_player_hitbox_down
+        image_speed = 5
+    }
+}
+
+
+move_towards_point(target_x,target_y,10)
+}else if (carry_stick == true){
+if(turn &gt; 100 &amp;&amp; turn &lt; 170){
+    sprite_index = spr_player_up_stick
+    with(obj_player_hitbox){
+        sprite_index = spr_player_hitbox_up_left
+    }
+}
+if(turn &gt; 190 &amp;&amp; turn &lt; 260){
+    sprite_index = spr_player_down_stick
+    with(obj_player_hitbox){
+        sprite_index = spr_player_hitbox_down_left
+        image_speed = 5
+    }
+}
+if(turn &gt; 280 &amp;&amp; turn &lt; 350){
+    sprite_index = spr_player_down_stick
+    with(obj_player_hitbox){
+        sprite_index = spr_player_hitbox_down_right
+        image_speed = 5
+    }
+}
+if(turn &lt; 80 &amp;&amp; turn &gt; 10){
+    sprite_index = spr_player_up_stick
+    with(obj_player_hitbox){
+        sprite_index = spr_player_hitbox_up_right
+        image_speed = 5
+    }
+}
+if(turn &lt; 10 || turn &gt; 350){
+    sprite_index = spr_player_right_stick
+    with(obj_player_hitbox){
+        sprite_index = spr_player_hitbox_right
+        image_speed = 5
+    }
+}
+if(turn &lt; 100 &amp;&amp; turn &gt; 80){
+    sprite_index = spr_player_up_stick
+    with(obj_player_hitbox){
+        sprite_index = spr_player_hitbox_up
+        image_speed = 5
+    }
+}
+if(turn &lt; 190 &amp;&amp; turn &gt; 170){
+    sprite_index = spr_player_left_stick
+    with(obj_player_hitbox){
+        sprite_index = spr_player_hitbox_left
+        image_speed = 5
+    }
+}
+if(turn &lt; 280 &amp;&amp; turn &gt; 260){
+    sprite_index = spr_player_down_stick
+    with(obj_player_hitbox){
+        sprite_index = spr_player_hitbox_down
+        image_speed = 5
     }
 }
 
 
 move_towards_point(target_x,target_y,10)
 }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///carry stick
+
+if(carry_stick == true &amp;&amp; keyboard_check_pressed(ord('E')) &amp;&amp; collision_rectangle(obj_drop_zone.x-144,obj_drop_zone.y-80,obj_drop_zone.x+144,obj_drop_zone.y+80,obj_player_hitbox, false,false)){
+    global.stickcounter += 1
+    sprite_index = spr_player_up_alpha
+    carry_stick = false
 }
 </string>
           </argument>

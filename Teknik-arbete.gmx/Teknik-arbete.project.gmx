@@ -28,10 +28,14 @@
       <sprite>sprites\spr_player_hitbox_down_right</sprite>
       <sprites name="Player Sprites">
         <sprite>sprites\spr_player_down_alpha</sprite>
+        <sprite>sprites\spr_player_down_stick</sprite>
         <sprite>sprites\spr_player_down_alpha_reserve</sprite>
         <sprite>sprites\spr_player_right_alpha</sprite>
+        <sprite>sprites\spr_player_right_stick</sprite>
         <sprite>sprites\spr_player_left_alpha</sprite>
+        <sprite>sprites\spr_player_left_stick</sprite>
         <sprite>sprites\spr_player_up_alpha</sprite>
+        <sprite>sprites\spr_player_up_stick</sprite>
         <sprite>sprites\spr_magic_milkman</sprite>
       </sprites>
     </sprites>
@@ -50,6 +54,7 @@
     <sprite>sprites\spr_building_workstation_place</sprite>
     <sprite>sprites\spr_building_menu_workstation</sprite>
     <sprite>sprites\sprite33</sprite>
+    <sprite>sprites\spr_drop_zone</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
@@ -85,6 +90,7 @@
       <object>objects\Milk_man</object>
     </objects>
     <object>objects\obj_money_flow</object>
+    <object>objects\obj_drop_zone</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Testing_rm</room>

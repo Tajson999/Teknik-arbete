@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>image_speed = 0
 payed = false
-var stick_on_top
+stick_on_top = false
 </string>
           </argument>
         </arguments>
@@ -50,12 +50,13 @@ var stick_on_top
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//global.stickcounter += 1
+            <string>    with((near_work)){
 stick_on_top = true
+
+}
+payed = false
 global.movment = true
 global.hud_override = false
-payed = false
-
 </string>
           </argument>
         </arguments>
@@ -78,9 +79,11 @@ payed = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>    image_index = 3
+            <string>    with((near_work)){
+        image_index = 3
     image_speed = 0
     alarm[4] = 30
+    }
 </string>
           </argument>
         </arguments>
@@ -103,9 +106,11 @@ payed = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>    image_index = 2
+            <string>    with((near_work)){
+        image_index = 2
     image_speed = 0
     alarm[3] = 30
+    }
 </string>
           </argument>
         </arguments>
@@ -128,9 +133,11 @@ payed = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>    image_index = 1
+            <string>    with((near_work)){
+    image_index = 1
     image_speed = 0
     alarm[1] = 30
+    }
 </string>
           </argument>
         </arguments>
@@ -153,17 +160,30 @@ payed = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (payed == false &amp;&amp; collision_rectangle(obj_building_workstation.x-42, obj_building_workstation.y-32, obj_building_workstation.x+44, obj_building_workstation.y+33,obj_player_hitbox, true, false) != noone &amp;&amp; keyboard_check(ord('E')) &amp;&amp; global.treecounter &gt;= 1){
+            <string>near_work = instance_nearest(obj_test_player.x, obj_test_player.y, obj_building_workstation)
+
+if (stick_on_top == false &amp;&amp; payed == false &amp;&amp; collision_rectangle((near_work).x-42, (near_work).y-32, (near_work).x+44, (near_work).y+33,obj_player_hitbox, true, false) != noone &amp;&amp; keyboard_check_pressed(ord('E')) &amp;&amp; global.treecounter &gt;= 1){
     payed = true
     global.treecounter -= 1
     alarm[0] = 30
     obj_test_player.speed = 0
     global.hud_override = true
     global.movment = false
+    
 }
-if (stick_on_top == true) {
-    image_index = 0
-    image_speed = 0
+if (stick_on_top == true &amp;&amp; collision_rectangle((near_work).x-42, (near_work).y-32, (near_work).x+44, (near_work).y+33,obj_player_hitbox, true, false) != noone &amp;&amp; keyboard_check(ord('E')) ){
+    with(obj_test_player){
+        sprite_index = spr_player_down_stick
+        carry_stick = true
+    }
+    with(near_work){
+        image_index = 0
+        image_speed = 0
+        stick_on_top = false
+    }
+        
+    
+  
 }
 </string>
           </argument>

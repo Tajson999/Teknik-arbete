@@ -7,7 +7,14 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_test_wall</sprite>
+    <sprites name="Enviroment objects">
+      <sprites name="trees">
+        <sprite>sprites\spr_tree3</sprite>
+        <sprite>sprites\spr_tree2</sprite>
+        <sprite>sprites\spr_tree1</sprite>
+        <sprite>sprites\spr_tree</sprite>
+      </sprites>
+    </sprites>
     <sprites name="Player">
       <sprite>sprites\spr_test_player</sprite>
       <sprite>sprites\spr_player_right</sprite>
@@ -39,22 +46,25 @@
         <sprite>sprites\spr_magic_milkman</sprite>
       </sprites>
     </sprites>
-    <sprite>sprites\spr_tree</sprite>
-    <sprite>sprites\spr_tree1</sprite>
-    <sprite>sprites\spr_tree2</sprite>
-    <sprite>sprites\spr_tree3</sprite>
-    <sprite>sprites\spr_branch</sprite>
-    <sprite>sprites\spr_tree_spawner</sprite>
-    <sprite>sprites\spr_mouse</sprite>
-    <sprite>sprites\spr_hud_buildings</sprite>
-    <sprite>sprites\spr_hud_back_button</sprite>
-    <sprite>sprites\spr_building_menu</sprite>
-    <sprite>sprites\spr_hud_down</sprite>
-    <sprite>sprites\spr_building_workstation</sprite>
-    <sprite>sprites\spr_building_workstation_place</sprite>
-    <sprite>sprites\spr_building_menu_workstation</sprite>
-    <sprite>sprites\sprite33</sprite>
-    <sprite>sprites\spr_drop_zone</sprite>
+    <sprites name="Resources">
+      <sprite>sprites\spr_branch</sprite>
+    </sprites>
+    <sprites name="Hud/UI">
+      <sprite>sprites\spr_mouse</sprite>
+      <sprite>sprites\spr_hud_buildings</sprite>
+      <sprite>sprites\spr_hud_back_button</sprite>
+      <sprite>sprites\spr_building_menu</sprite>
+      <sprite>sprites\spr_hud_down</sprite>
+      <sprite>sprites\spr_building_menu_workstation</sprite>
+      <sprite>sprites\spr_building_workstation_place</sprite>
+    </sprites>
+    <sprites name="Items">
+      <sprite>sprites\spr_building_workstation</sprite>
+      <sprite>sprites\spr_drop_zone</sprite>
+    </sprites>
+    <sprites name="Test stuff">
+      <sprite>sprites\spr_test_wall</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>

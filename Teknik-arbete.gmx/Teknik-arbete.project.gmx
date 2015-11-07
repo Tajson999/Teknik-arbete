@@ -70,6 +70,12 @@
     <background>background\bg_grass</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_text.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_test_wall</object>
     <object>objects\obj_tree</object>
@@ -94,16 +100,20 @@
       <object>objects\obj_building_menu_workstation_button</object>
       <object>objects\obj_building_workstation</object>
     </objects>
-    <object>objects\obj_test</object>
-    <object>objects\obj_tree_spawner</object>
     <objects name="NPC's">
       <object>objects\Milk_man</object>
     </objects>
     <object>objects\obj_money_flow</object>
     <object>objects\obj_drop_zone</object>
+    <objects name="Test objects">
+      <object>objects\obj_test</object>
+      <object>objects\obj_tree_spawner</object>
+      <object>objects\obj_text</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\Testing_rm</room>
+    <room>rooms\Test_room_for_text</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

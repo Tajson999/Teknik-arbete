@@ -61,10 +61,12 @@
     <sprites name="Items">
       <sprite>sprites\spr_building_workstation</sprite>
       <sprite>sprites\spr_drop_zone</sprite>
+      <sprite>sprites\spr_delivery_zone</sprite>
     </sprites>
     <sprites name="Test stuff">
       <sprite>sprites\spr_test_wall</sprite>
     </sprites>
+    <sprite>sprites\spr_worker</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
@@ -72,6 +74,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_text.gml</script>
+    <script>scripts\scr_define_path.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt</font>
@@ -90,6 +93,7 @@
     <object>objects\obj_grid_create</object>
     <objects name="Debug">
       <object>objects\obj_debug_restart_fullscreen</object>
+      <object>objects\obj_debug_path</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_test_player</object>
@@ -103,13 +107,16 @@
     <objects name="NPC's">
       <object>objects\Milk_man</object>
     </objects>
-    <object>objects\obj_money_flow</object>
+    <object>objects\obj_time_money</object>
+    <object>objects\obj_delivery_zone</object>
     <object>objects\obj_drop_zone</object>
     <objects name="Test objects">
       <object>objects\obj_test</object>
       <object>objects\obj_tree_spawner</object>
       <object>objects\obj_text</object>
     </objects>
+    <object>objects\obj_worker</object>
+    <object>objects\obj_start</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Testing_rm</room>

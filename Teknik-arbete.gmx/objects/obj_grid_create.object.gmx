@@ -25,10 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///create grid 31*23
-
-ds_grid_create(31,23)
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>

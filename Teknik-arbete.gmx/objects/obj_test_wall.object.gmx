@@ -26,8 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>mp_grid_add_instances(global.AI_grid, obj_test_wall , false)
-if scr_define_path(){
-}
 
 
 </string>

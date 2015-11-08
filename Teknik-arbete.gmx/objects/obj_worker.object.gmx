@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>pos = 1
 xx = path_get_point_x(global.path_AI, pos)
-yy = path_get_point_y(global.path_AI, pos)
+yy = path_get_point_x(global.path_AI, pos)
 </string>
           </argument>
         </arguments>
@@ -50,15 +50,16 @@ yy = path_get_point_y(global.path_AI, pos)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (point_distance(x,y, xx, yy ) &lt; 6){
+            <string>
+if (point_distance(x,y, xx, yy ) &lt; 6){
     pos++
     if pos = path_get_number(global.path_AI){
-        instance_destroy()
-    
-}else{
+    instance_create(x,y,obj_worker)
+    instance_destroy()
+    }else{
     xx = path_get_point_x(global.path_AI, pos)
     yy = path_get_point_y(global.path_AI, pos)
-}
+    }
 }
 mp_potential_step(xx, yy, 3 , false)
 image_angle = direction

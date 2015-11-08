@@ -67,6 +67,7 @@
       <sprite>sprites\spr_test_wall</sprite>
     </sprites>
     <sprite>sprites\spr_worker</sprite>
+    <sprite>sprites\spr_worker_back</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
@@ -75,6 +76,7 @@
   <scripts name="scripts">
     <script>scripts\scr_text.gml</script>
     <script>scripts\scr_define_path.gml</script>
+    <script>scripts\scr_define_path_back.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt</font>
@@ -105,7 +107,7 @@
       <object>objects\obj_building_workstation</object>
     </objects>
     <objects name="NPC's">
-      <object>objects\Milk_man</object>
+      <object>objects\obj_milk_man</object>
     </objects>
     <object>objects\obj_time_money</object>
     <object>objects\obj_delivery_zone</object>
@@ -116,6 +118,7 @@
       <object>objects\obj_text</object>
     </objects>
     <object>objects\obj_worker</object>
+    <object>objects\obj_worker_back</object>
     <object>objects\obj_start</object>
   </objects>
   <rooms name="rooms">

@@ -36,6 +36,12 @@ if scr_define_path(){
         yy = path_get_point_y(global.path_AI, pos)
     }
 }
+if scr_define_path_back(){
+    with (obj_worker_back){
+        xx = path_get_point_x(global.path_AI_back, pos)
+        yy = path_get_point_y(global.path_AI_back, pos)
+    }
+}
 </string>
           </argument>
         </arguments>

@@ -122,8 +122,8 @@
     <object>objects\obj_start</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Testing_rm</room>
     <room>rooms\Test_room_for_text</room>
+    <room>rooms\Testing_rm</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

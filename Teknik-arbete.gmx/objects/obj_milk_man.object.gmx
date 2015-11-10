@@ -28,13 +28,13 @@
             <string>if (keyboard_check_pressed(vk_space))
 {
     var str;
-    switch (irandom(4))
+    switch (irandom(3))
     {
         case 0: str = "Oh hello! You are new here, am I right?";break;
-        case 1: str = "I will teach you the all mighty way of inventing!!!#I promise you! One day, your family name will be know all over the world# ...at least the tradeing part";break;
-        case 2: str = "*smiles*";break; 
-        case 3: str = "Got anything new? A hammer? A car?# ...wait what!? Just a STICk!?";break;
-        case 4: str = "*Gasps*";break;
+       // case 1: str = "I will teach you the all mighty way of inventing!!!#I promise you! One day, your family name will be know all over the world# ...at least the tradeing part";break;
+        case 1: str = "*smiles*";break; 
+        case 2: str = "Got anything new? A hammer? A car?# ...wait what!? Just a STICk!?";break;
+        case 3: str = "*Gasps*";break;
         default: str = "Something went wrong!";break;
     }
     scr_text(str,1,x - 50,y - 100);

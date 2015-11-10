@@ -262,7 +262,7 @@ if(carry_stick == true &amp;&amp; keyboard_check_pressed(ord('E')) &amp;&amp; co
       </action>
     </event>
   </events>
-  <PhysicsObject>0</PhysicsObject>
+  <PhysicsObject>-1</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>1</PhysicsObjectShape>
   <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
@@ -273,5 +273,10 @@ if(carry_stick == true &amp;&amp; keyboard_check_pressed(ord('E')) &amp;&amp; co
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>0,-1</point>
+    <point>64,-1</point>
+    <point>64,63</point>
+    <point>0,63</point>
+  </PhysicsShapePoints>
 </object>

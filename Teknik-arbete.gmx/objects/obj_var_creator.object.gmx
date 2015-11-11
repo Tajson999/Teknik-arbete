@@ -45,6 +45,7 @@ global.path_AI_back = path_add()
 mp_grid_add_instances(global.AI_grid, obj_test_wall, false)
 mp_grid_add_instances(global.AI_grid, obj_building_workstation, false)
 mp_grid_add_instances(global.AI_grid, obj_tree, true)
+mp_grid_add_instances(global.AI_grid, Tree_alpha, false)
 mp_grid_add_instances(global.AI_grid, obj_milk_man, true)
 
 

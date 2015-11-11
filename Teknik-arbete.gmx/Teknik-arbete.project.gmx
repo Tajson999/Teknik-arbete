@@ -13,7 +13,7 @@
         <sprite>sprites\spr_tree2</sprite>
         <sprite>sprites\spr_tree1</sprite>
         <sprite>sprites\spr_tree</sprite>
-        <sprite>sprites\sprite45</sprite>
+        <sprite>sprites\spr_tree_alpha</sprite>
       </sprites>
     </sprites>
     <sprites name="Player">

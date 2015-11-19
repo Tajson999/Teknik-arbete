@@ -66,9 +66,12 @@
     </sprites>
     <sprites name="Test stuff">
       <sprite>sprites\spr_test_wall</sprite>
+      <sprite>sprites\spr_tree_test</sprite>
     </sprites>
     <sprite>sprites\spr_worker</sprite>
+    <sprite>sprites\spr_worker_button</sprite>
     <sprite>sprites\spr_worker_back</sprite>
+    <sprite>sprites\spr_black_whole_screen</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
@@ -78,6 +81,7 @@
     <script>scripts\scr_text.gml</script>
     <script>scripts\scr_define_path.gml</script>
     <script>scripts\scr_define_path_back.gml</script>
+    <script>scripts\scr_remove_buttons_WIP.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt</font>
@@ -119,10 +123,15 @@
       <object>objects\obj_tree_spawner</object>
       <object>objects\obj_text</object>
     </objects>
+    <object>objects\obj_worker_button</object>
     <object>objects\obj_worker</object>
     <object>objects\obj_worker_back</object>
     <object>objects\obj_start</object>
     <object>objects\Tree_alpha</object>
+    <object>objects\obj_workbench_counter</object>
+    <object>objects\obj_worker_picker</object>
+    <object>objects\obj_building_menu_worker_button</object>
+    <object>objects\obj_worker_placement</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Testing_rm</room>

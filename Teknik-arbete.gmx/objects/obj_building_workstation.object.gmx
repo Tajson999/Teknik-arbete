@@ -42,6 +42,39 @@ if scr_define_path_back(){
         yy = path_get_point_y(global.path_AI_back, pos)
     }
 }
+
+global.workbench_counter =+1 
+/*
+for(i = 0; i &lt; global.workbench_counter; i++){
+    if(global.workbench_array[i] == -1){
+        global.workbench_array[i] = 0
+        i = global.workbench_counter
+    }
+}*/
+occupied = false
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.workbench_counter =- 1
 </string>
           </argument>
         </arguments>
@@ -198,6 +231,39 @@ if (stick_on_top == true &amp;&amp; collision_rectangle((near_work).x-42, (near_
         
     
   
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// worker placement
+
+if(global.worker_picker == true){
+    if(occupied == true){
+        sprite_index = spr_building_workstation_place
+        image_index = 1
+        image_speed = 0
+    }else if(occupied == false){    
+        sprite_index = spr_building_workstation_place
+        image_index = 0
+        image_speed = 0
+    }
 }
 </string>
           </argument>

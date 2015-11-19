@@ -3,7 +3,7 @@
   <spriteName>spr_worker</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-6</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,21 +25,34 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>pos = 1
-xx = path_get_point_x(global.path_AI, pos)
-yy = path_get_point_y(global.path_AI, pos)
-/*
-for(i = 0; i &lt; global.workbench_counter; i++){
-    if(global.workbench_array[i] == -1){
-        
-        i = global.workbench_counter
-    }
-}*/
-
-/*global.movment = false
-global.hud_override = true
-instance_create(1,1,obj_worker_placement)
-global.worker_picker = true*/
+            <string>global.worker_picker = true
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>x = mouse_x
+y = mouse_y
+if(global.worker_picker = false){
+    instance_destroy()
+}
 </string>
           </argument>
         </arguments>
@@ -62,19 +75,11 @@ global.worker_picker = true*/
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-if (point_distance(x,y, xx, yy ) &lt; 6){
-    pos++
-    if pos = path_get_number(global.path_AI){
-    instance_create(x,y,obj_worker_back)
-    instance_destroy()
-    }else{
-    xx = path_get_point_x(global.path_AI, pos)
-    yy = path_get_point_y(global.path_AI, pos)
-    }
+            <string>/*near_work = instance_nearest(obj_worker_placement.x, obj_worker_placement.y, obj_building_workstation)
+if(place_meeting(obj_worker_placement.x, obj_worker_placement.y, (near_work)) &amp;&amp; occupied == false){
+
 }
-mp_potential_step(xx, yy, 3 , false)
-image_angle = direction
+
 </string>
           </argument>
         </arguments>

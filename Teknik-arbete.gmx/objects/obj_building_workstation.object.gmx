@@ -44,14 +44,15 @@ if scr_define_path_back(){
 }
 
 global.workbench_counter =+1 
-/*
-for(i = 0; i &lt; global.workbench_counter; i++){
-    if(global.workbench_array[i] == -1){
-        global.workbench_array[i] = 0
-        i = global.workbench_counter
+
+for(i = 0; i &lt; 50; i++){
+    if(global.workbench_array[0, i] == -1){
+        global.workbench_array[0, i] = 0
+        global.workbench_array[1, i] = id.x
+        global.workbench_array[2, i] = id.y
+        i = 50
     }
-}*/
-occupied = false
+}
 </string>
           </argument>
         </arguments>

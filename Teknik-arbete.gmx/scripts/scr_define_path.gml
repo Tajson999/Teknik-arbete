@@ -1,5 +1,6 @@
-var sx = obj_start.x
-var sy = obj_start.y
+
+var sx = argument0
+var sy = argument1
 var fx = obj_delivery_zone.x
 var fy = obj_delivery_zone.y
 

@@ -48,10 +48,20 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = mouse_x
+            <string>///follow mouse and destroy
+x = mouse_x
 y = mouse_y
 if(global.worker_picker = false){
     instance_destroy()
+}
+
+near_work = instance_nearest(obj_worker_placement.x, obj_worker_placement.y, obj_building_workstation)
+if near_work != near_work{
+    for(i = 1; i &lt; 50 ; i++){
+        global.workbench_array[0, i] = 1
+        global.workbench_array[1, i] = 0
+        global.workbench_array[2, i] = 0
+    }
 }
 </string>
           </argument>

@@ -44,11 +44,10 @@ for(i = 0; i &lt; 50 ; i++){
 global.workbench_array[0, i] = -1
 }
 
+global.worker_total = 0
 global.worker_picker = false
 
 global.AI_grid = mp_grid_create(0,0, room_width / 32, room_height / 32, 32,32)
-global.path_AI = path_add()
-global.path_AI_back = path_add()
 
 mp_grid_add_instances(global.AI_grid, obj_test_wall, false)
 mp_grid_add_instances(global.AI_grid, obj_building_workstation, false)

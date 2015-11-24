@@ -28,6 +28,11 @@
             <string>pos = 1
 xx = path_get_point_x(global.path_AI, pos)
 yy = path_get_point_y(global.path_AI, pos)
+
+global.worker_total += 1
+
+
+global.path_AI[global.worker_total] = path_add()
 /*
 for(i = 0; i &lt; global.workbench_counter; i++){
     if(global.workbench_array[i] == -1){
@@ -40,6 +45,29 @@ for(i = 0; i &lt; global.workbench_counter; i++){
 global.hud_override = true
 instance_create(1,1,obj_worker_placement)
 global.worker_picker = true*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>obj_worker</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///deleate path needs adding
 </string>
           </argument>
         </arguments>

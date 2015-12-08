@@ -57,10 +57,6 @@ mp_grid_add_instances(global.AI_grid, obj_milk_man, true)
 
 
 
-scr_define_path();
-
-scr_define_path_back();
-
 </string>
           </argument>
         </arguments>

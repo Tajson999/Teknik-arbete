@@ -1,4 +1,4 @@
-var fx = argument0
+/*var fx = argument0
 var fy = argument1
 var sx = obj_delivery_zone.x
 var sy = obj_delivery_zone.y

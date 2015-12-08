@@ -25,11 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>pos = 1
+            <string>/*pos = 1
 xx = path_get_point_x(global.path_AI_back, pos)
 yy = path_get_point_y(global.path_AI_back, pos)
 
-global.path_AI_back[global.worker_total] = path_add()
+/*global.path_AI_back[global.worker_total] = path_add()
 
 </string>
           </argument>
@@ -53,7 +53,7 @@ global.path_AI_back[global.worker_total] = path_add()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>/*
 if (point_distance(x,y, xx, yy ) &lt; 6){
     pos++
     if pos = path_get_number(global.path_AI_back){

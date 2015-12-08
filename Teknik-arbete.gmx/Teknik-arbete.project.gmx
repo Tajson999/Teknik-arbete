@@ -100,7 +100,7 @@
     <object>objects\obj_grid_create</object>
     <objects name="Debug">
       <object>objects\obj_debug_restart_fullscreen</object>
-      <object>objects\obj_debug_path</object>
+      <object>objects\</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_test_player</object>

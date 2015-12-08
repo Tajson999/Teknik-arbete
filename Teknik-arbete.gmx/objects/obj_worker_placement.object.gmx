@@ -52,16 +52,12 @@
 x = mouse_x
 y = mouse_y
 if(global.worker_picker = false){
-    instance_destroy()
-}
 
-near_work = instance_nearest(obj_worker_placement.x, obj_worker_placement.y, obj_building_workstation)
-if near_work != near_work{
-    for(i = 1; i &lt; 50 ; i++){
-        global.workbench_array[0, i] = 1
-        global.workbench_array[1, i] = 0
-        global.workbench_array[2, i] = 0
-    }
+    global.building_menu = false
+    global.menu = false
+    global.movment = true
+    global.worker_picker = false
+    instance_destroy()
 }
 </string>
           </argument>
@@ -89,7 +85,20 @@ if near_work != near_work{
 if(place_meeting(obj_worker_placement.x, obj_worker_placement.y, (near_work)) &amp;&amp; occupied == false){
 
 }
+*/
 
+nearwork = instance_nearest(obj_worker_placement.x, obj_worker_placement.y, obj_building_workstation)
+
+if( collision_rectangle( (nearwork).x-42, (nearwork).y-32, (nearwork).x+43, (nearwork).y+43, obj_worker_placement,false,false) != noone ) &amp;&amp; mouse_check_button_released(mb_left){
+    global.worker_picker = false
+    instance_create(obj_worker_placement.x, obj_worker_placement.y, obj_worker)
+    
+    global.building_menu = false
+    global.menu = false
+    global.movment = true
+    global.worker_picker = false
+    instance_destroy()   
+}
 </string>
           </argument>
         </arguments>

@@ -29,30 +29,7 @@
 payed = false
 stick_on_top = false
 
-mp_grid_add_instances(global.AI_grid, id, false)
-if scr_define_path(){
-    with (obj_worker){
-        xx = path_get_point_x(global.path_AI, pos)
-        yy = path_get_point_y(global.path_AI, pos)
-    }
-}
-if scr_define_path_back(){
-    with (obj_worker_back){
-        xx = path_get_point_x(global.path_AI_back, pos)
-        yy = path_get_point_y(global.path_AI_back, pos)
-    }
-}
-
-global.workbench_counter =+1 
-
-for(i = 0; i &lt; 50; i++){
-    if(global.workbench_array[0, i] == -1){
-        global.workbench_array[0, i] = 0
-        global.workbench_array[1, i] = id.x
-        global.workbench_array[2, i] = id.y
-        i = 50
-    }
-}
+ocupide = false
 </string>
           </argument>
         </arguments>
@@ -255,17 +232,6 @@ if (stick_on_top == true &amp;&amp; collision_rectangle((near_work).x-42, (near_
             <kind>1</kind>
             <string>/// worker placement
 
-if(global.worker_picker == true){
-    if(occupied == true){
-        sprite_index = spr_building_workstation_place
-        image_index = 1
-        image_speed = 0
-    }else if(occupied == false){    
-        sprite_index = spr_building_workstation_place
-        image_index = 0
-        image_speed = 0
-    }
-}
 </string>
           </argument>
         </arguments>

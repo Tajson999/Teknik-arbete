@@ -91,7 +91,7 @@ nearwork = instance_nearest(obj_worker_placement.x, obj_worker_placement.y, obj_
 
 if( collision_rectangle( (nearwork).x-42, (nearwork).y-32, (nearwork).x+43, (nearwork).y+43, obj_worker_placement,false,false) != noone ) &amp;&amp; mouse_check_button_released(mb_left){
     global.worker_picker = false
-    instance_create(obj_worker_placement.x, obj_worker_placement.y, obj_worker)
+    instance_create(obj_worker_placement.x, obj_worker_placement.y, obj_crafter)
     
     global.building_menu = false
     global.menu = false

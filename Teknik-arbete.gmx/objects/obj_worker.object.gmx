@@ -3,7 +3,7 @@
   <spriteName>spr_worker</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,8 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-
+            <string>x = 128
+y = 128
+/*
 
 
 path = path_add()
@@ -34,9 +35,8 @@ global.worker_total += 1
 worknear = instance_nearest(x,y,obj_building_workstation)
 mp_grid_path(global.AI_grid,path,(worknear).x,(worknear).y, obj_delivery_zone.x, obj_delivery_zone.y,true)
 
-pos = 1
-xx = path_get_point_x(path, pos)
-yy = path_get_point_y(path, pos)
+
+path_start(path, 6, 3, false)
 
 
 /*
@@ -56,31 +56,6 @@ global.worker_picker = true*/
         </arguments>
       </action>
     </event>
-    <event eventtype="1" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>obj_worker</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///deleate path needs adding
-
-path_delete(path)
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -92,35 +67,37 @@ path_delete(path)
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !mp_grid_path(global.AI_grid, path, (worknear).x, (worknear).y, obj_delivery_zone.x, obj_delivery_zone.y, true){
-    show_message ("No path")
-    return false
-}else
-    path_set_kind(path, 1){
-    path_set_precision(path, 8)
-    return true
-}
-
-
+            <string>
+/*
 if (point_distance(x,y, xx, yy ) &lt; 6){
-    pos++
+    
     if pos = path_get_number(path){
     instance_create(x,y,obj_worker_back)
-    instance_destroy()
+    path_delete(path)
     
     }else{
+    pos++
     xx = path_get_point_x(path, pos)
     yy = path_get_point_y(path, pos)
     }
 }
 mp_potential_step(xx, yy, 3 , false)
 image_angle = direction
+if !mp_grid_path(global.AI_grid, path, (worknear).x, (worknear).y, obj_delivery_zone.x, obj_delivery_zone.y, true){
+    show_message ("No path")
+    
+}else
+    path_set_kind(path, 1){
+    path_set_precision(path, 8)
+    
+}
+
 </string>
           </argument>
         </arguments>
@@ -143,7 +120,7 @@ image_angle = direction
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_path(path,x,y,true)
+            <string>/*draw_path(path,x,y,true)
 </string>
           </argument>
         </arguments>

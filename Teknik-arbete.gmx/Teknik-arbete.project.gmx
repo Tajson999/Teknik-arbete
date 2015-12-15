@@ -72,6 +72,7 @@
     <sprite>sprites\spr_worker_button</sprite>
     <sprite>sprites\spr_worker_back</sprite>
     <sprite>sprites\spr_black_whole_screen</sprite>
+    <sprite>sprites\sprite49</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
@@ -130,6 +131,7 @@
     <object>objects\Tree_alpha</object>
     <object>objects\obj_workbench_counter</object>
     <object>objects\obj_worker_picker</object>
+    <object>objects\obj_crafter</object>
     <object>objects\obj_building_menu_worker_button</object>
     <object>objects\obj_worker_placement</object>
   </objects>

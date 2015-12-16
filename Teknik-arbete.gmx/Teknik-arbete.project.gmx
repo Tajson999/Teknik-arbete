@@ -80,6 +80,8 @@
   <backgrounds name="background">
     <background>background\bg_grass</background>
     <background>background\tile_water</background>
+    <background>background\tile_water_2</background>
+    <background>background\tile_water_3</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">

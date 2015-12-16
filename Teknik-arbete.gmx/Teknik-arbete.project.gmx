@@ -53,11 +53,15 @@
     <sprites name="Hud/UI">
       <sprite>sprites\spr_mouse</sprite>
       <sprite>sprites\spr_hud_buildings</sprite>
+      <sprite>sprites\spr_hud_workers</sprite>
       <sprite>sprites\spr_hud_back_button</sprite>
       <sprite>sprites\spr_building_menu</sprite>
       <sprite>sprites\spr_hud_down</sprite>
       <sprite>sprites\spr_building_menu_workstation</sprite>
       <sprite>sprites\spr_building_workstation_place</sprite>
+      <sprite>sprites\spr_black_whole_screen</sprite>
+      <sprite>sprites\spr_plus</sprite>
+      <sprite>sprites\spr_minus</sprite>
     </sprites>
     <sprites name="Items">
       <sprite>sprites\spr_building_workstation</sprite>
@@ -71,8 +75,7 @@
     <sprite>sprites\spr_worker</sprite>
     <sprite>sprites\spr_worker_button</sprite>
     <sprite>sprites\spr_worker_back</sprite>
-    <sprite>sprites\spr_black_whole_screen</sprite>
-    <sprite>sprites\sprite49</sprite>
+    <sprite>sprites\spr_worker_lumberjack</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
@@ -95,14 +98,16 @@
     <object>objects\obj_counter</object>
     <object>objects\obj_hud</object>
     <object>objects\obj_hud_building</object>
+    <object>objects\obj_hud_workers</object>
     <object>objects\obj_bulding_menu</object>
+    <object>objects\obj_worker_menu</object>
     <object>objects\obj_var_creator</object>
     <object>objects\obj_hud_back_button</object>
     <object>objects\obj_mouse</object>
     <object>objects\obj_grid_create</object>
     <objects name="Debug">
       <object>objects\obj_debug_restart_fullscreen</object>
-      <object>objects\</object>
+      <object>objects\obj_draw_path</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_test_player</object>
@@ -126,14 +131,14 @@
       <object>objects\obj_text</object>
     </objects>
     <object>objects\obj_worker_button</object>
-    <object>objects\obj_worker</object>
-    <object>objects\obj_worker_back</object>
     <object>objects\obj_start</object>
     <object>objects\Tree_alpha</object>
     <object>objects\obj_workbench_counter</object>
     <object>objects\obj_worker_picker</object>
     <object>objects\obj_crafter</object>
     <object>objects\obj_building_menu_worker_button</object>
+    <object>objects\obj_worker_menu_add_lumberjack</object>
+    <object>objects\obj_worker_menu_minus_lumberjack</object>
     <object>objects\obj_worker_placement</object>
   </objects>
   <rooms name="rooms">

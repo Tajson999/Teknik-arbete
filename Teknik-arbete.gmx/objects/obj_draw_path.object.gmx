@@ -4,11 +4,11 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,35 +25,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// var and grid
-globalvar building_menu
-global.building_menu = false
+            <string>draw_set_alpha(0.1)
 
-globalvar menu
-global.menu = false
+mp_grid_draw(global.AI_grid)
 
-globalvar hud_override
-global.hud_override = false
+for (var i = 0; i &lt; room_width; i += 32){
+    draw_line(i, 0 , i, room_height)
+}
+for (i = 0; i &lt; room_height; i += 32){
+    draw_line(0, i, room_width, i)
+}
+draw_set_alpha(1)
 
-globalvar debug
-global.debug = true
-
-global.workbench_counter = 0
-
-global.worker_lumberjack = 0
-
-global.worker_total = 0
-global.worker_picker = false
-
-global.AI_grid = mp_grid_create(0,0, room_width / 32, room_height / 32, 32,32)
-
-mp_grid_add_instances(global.AI_grid, obj_test_wall, false)
-mp_grid_add_instances(global.AI_grid, obj_building_workstation, false)
-mp_grid_add_instances(global.AI_grid, obj_tree, true)
-mp_grid_add_instances(global.AI_grid, Tree_alpha, true)
-mp_grid_add_instances(global.AI_grid, obj_milk_man, true)
-
-scr_define_path()
 
 </string>
           </argument>

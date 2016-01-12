@@ -5,9 +5,29 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_minus</sprite>
+    <sprite>sprites\spr_mouse</sprite>
+    <sprite>sprites\spr_tree_alpha</sprite>
+    <sprite>sprites\spr_branch</sprite>
+    <sprite>sprites\spr_plus</sprite>
+    <sprite>sprites\spr_test_wall</sprite>
+    <sprite>sprites\spr_worker_lumberjack</sprite>
+    <sprite>sprites\spr_drop_zone</sprite>
+    <sprite>sprites\spr_building_workstation</sprite>
+    <sprite>sprites\spr_delivery_zone</sprite>
+    <sprite>sprites\spr_magic_milkman</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\obj_var_creator</object>
+    <object>objects\obj_time</object>
+    <object>objects\obj_mouse</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\Start_store</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>

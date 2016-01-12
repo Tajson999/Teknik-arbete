@@ -130,7 +130,7 @@
     <option_androidfire_push_id></option_androidfire_push_id>
     <option_androidfire_scale>-1</option_androidfire_scale>
     <option_androidfire_set_device_id></option_androidfire_set_device_id>
-    <option_androidfire_small_icon_png>Configs\Default\amazonfire\icons\small_icon</option_androidfire_small_icon_png>
+    <option_androidfire_small_icon_png>Configs\Default\amazonfire\icons\small_icon.png</option_androidfire_small_icon_png>
     <option_androidfire_splash_png>Configs\Default\amazonfire\splash.png</option_androidfire_splash_png>
     <option_androidfire_splash_time>0</option_androidfire_splash_time>
     <option_androidfire_target_sdk_version>23</option_androidfire_target_sdk_version>
@@ -191,7 +191,7 @@
     <option_androidtv_push_id></option_androidtv_push_id>
     <option_androidtv_scale>-1</option_androidtv_scale>
     <option_androidtv_set_device_id></option_androidtv_set_device_id>
-    <option_androidtv_small_icon_png>Configs\Default\androidtv\icons\small_icon</option_androidtv_small_icon_png>
+    <option_androidtv_small_icon_png>Configs\Default\androidtv\icons\small_icon.png</option_androidtv_small_icon_png>
     <option_androidtv_splash_png>Configs\Default\androidtv\splash.png</option_androidtv_splash_png>
     <option_androidtv_texture_page>1024</option_androidtv_texture_page>
     <option_androidtv_use_test_ads>false</option_androidtv_use_test_ads>
@@ -405,7 +405,7 @@
     <option_savekey>true</option_savekey>
     <option_scale>-1</option_scale>
     <option_scaleprogress>true</option_scaleprogress>
-    <option_sci_UseSCI>false</option_sci_UseSCI>
+    <option_sci_UseSCI>0</option_sci_UseSCI>
     <option_sci_serverLocation></option_sci_serverLocation>
     <option_screenkey>true</option_screenkey>
     <option_screenshotkey>true</option_screenshotkey>

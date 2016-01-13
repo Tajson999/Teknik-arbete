@@ -37,6 +37,7 @@ global.season = 1
 global.season_time = 1
 global.season_word = "Winter"
 global.food_for_you = 50
+global.time_multi = 1
 
 //statistic
 global.stats_days = 0

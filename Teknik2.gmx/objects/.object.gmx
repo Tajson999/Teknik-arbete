@@ -29,7 +29,7 @@
 minutes = 1; //Set The Starting minutes
 hours = 23; //Set The Starting hours
 alarm[0]=7; //Set alarm for one second (room_speed)
-
+time = 1
 </string>
           </argument>
         </arguments>
@@ -58,7 +58,7 @@ if minutes &gt;= 60 // check if minutes bigger than 60
     minutes = 0;// reset minutes
     hours +=1;//add one to hours
 }
-alarm[0]=7/global.time_multi;//reset alarm
+alarm[0]=7/time;//reset alarm
 if minutes==0 &amp;&amp; hours==24 // check if countdown has reached midnight
 {
     minuter=0
@@ -97,18 +97,14 @@ if (global.season_time == 7){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (keyboard_check(ord('1'))){
-    global.time_multi = 1
+            <string>if (keyboard_check(vk_numpad1)){
+    time = 1
 }
-if (keyboard_check(ord('2'))){
-    global.time_multi = 2
+if (keyboard_check(vk_numpad2)){
+    time = 10
 }
 if (keyboard_check(ord('3'))){
-    global.time_multi = 3
-}
-
-if(keyboard_check(ord('4'))){
-    global.time_multi = 20
+    time = 10
 }
 
 </string>
@@ -143,21 +139,6 @@ switch(global.season){
     case 3: global.season_word = "Summer" break;
     case 4: global.season_word = "Fall" break;
     default: global.season_word = "Season word error";
-}
-
-if global.time_multi == 1{
-draw_triangle(view_xview+108, view_yview+7, view_xview+108, view_yview+17, view_xview+120, view_yview+12,false)
-}
-if global.time_multi == 2{
-draw_triangle(view_xview+108, view_yview+7, view_xview+108, view_yview+17, view_xview+120, view_yview+12,false)
-draw_triangle(view_xview+122, view_yview+7, view_xview+122, view_yview+17, view_xview+134, view_yview+12,false)
-
-}
-if global.time_multi == 3{
-draw_triangle(view_xview+108, view_yview+7, view_xview+108, view_yview+17, view_xview+120, view_yview+12,false)
-draw_triangle(view_xview+122, view_yview+7, view_xview+122, view_yview+17, view_xview+134, view_yview+12,false)
-draw_triangle(view_xview+136, view_yview+7, view_xview+136, view_yview+17, view_xview+148, view_yview+12,false)
-
 }
 
 draw_text(view_xview+5, view_yview+21, global.season_word + " Day: " + season_day)

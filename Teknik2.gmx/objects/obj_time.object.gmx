@@ -29,7 +29,7 @@
 minutes = 1; //Set The Starting minutes
 hours = 23; //Set The Starting hours
 alarm[0]=7; //Set alarm for one second (room_speed)
-
+time = 1
 </string>
           </argument>
         </arguments>
@@ -58,7 +58,7 @@ if minutes &gt;= 60 // check if minutes bigger than 60
     minutes = 0;// reset minutes
     hours +=1;//add one to hours
 }
-alarm[0]=7;//reset alarm
+alarm[0]=7/time;//reset alarm
 if minutes==0 &amp;&amp; hours==24 // check if countdown has reached midnight
 {
     minuter=0
@@ -75,6 +75,38 @@ if (global.season_time == 7){
         global.season += 1// if not fall add one
     }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (keyboard_check(ord('A'))){
+    time = 1
+}
+if (keyboard_check(ord('S'))){
+    time = 2
+}
+if (keyboard_check(ord('D'))){
+    time = 10
+}
+
 </string>
           </argument>
         </arguments>

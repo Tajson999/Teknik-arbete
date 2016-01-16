@@ -61,10 +61,75 @@ go_y = y
     path_set_kind(global.player_path, 1)
     path_set_precision(global.player_path, 8)
     path_start(global.player_path,6*global.time_multi,path_action_stop,true)
+    image_speed = 0
     }
 
     
 }
+
+var turn = point_direction(x,y,go_x, go_y);
+
+if(turn &gt; 100 &amp;&amp; turn &lt; 170){
+    sprite_index = spr_player_up_alpha
+    image_speed = .25
+    with(obj_player_hitbox){
+        sprite_index = spr_player_hitbox_up_left
+    }
+}
+if(turn &gt; 190 &amp;&amp; turn &lt; 260){
+    sprite_index = spr_player_down_alpha
+    image_speed = .25
+    with(obj_player_hitbox){
+        sprite_index = spr_player_hitbox_down_left
+        
+    }
+}
+if(turn &gt; 280 &amp;&amp; turn &lt; 350){
+    sprite_index = spr_player_down_alpha
+        image_speed = .25
+    with(obj_player_hitbox){
+        sprite_index = spr_player_hitbox_down_right
+    }
+}
+if(turn &lt; 80 &amp;&amp; turn &gt; 10){
+    sprite_index = spr_player_up_alpha
+        image_speed = .25
+    with(obj_player_hitbox){
+        sprite_index = spr_player_hitbox_up_right
+    }
+}
+if(turn &lt; 10 || turn &gt; 350){
+    sprite_index = spr_player_right_alpha
+        image_speed = .25
+    with(obj_player_hitbox){
+        sprite_index = spr_player_hitbox_right
+    }
+}
+if(turn &lt; 100 &amp;&amp; turn &gt; 80){
+    sprite_index = spr_player_up_alpha
+        image_speed = .25
+    with(obj_player_hitbox){
+        sprite_index = spr_player_hitbox_up
+    }
+}
+if(turn &lt; 190 &amp;&amp; turn &gt; 170){
+    sprite_index = spr_player_left_alpha
+        image_speed = .25
+    with(obj_player_hitbox){
+        sprite_index = spr_player_hitbox_left
+    }
+}
+if(turn &lt; 280 &amp;&amp; turn &gt; 260){
+    sprite_index = spr_player_down_alpha
+        image_speed = .25
+    with(obj_player_hitbox){
+        sprite_index = spr_player_hitbox_down
+    }
+}
+
+
+
+
 </string>
           </argument>
         </arguments>

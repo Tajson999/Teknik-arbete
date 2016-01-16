@@ -63,7 +63,7 @@ if minutes==0 &amp;&amp; hours==24 // check if countdown has reached midnight
 {
     minuter=0
     hours=0
-    global.money = global.money - global.food_for_you
+    global.money = global.money - global.cost_food_for_you
     global.season_time += 1
     global.stats_days += 1
 }
@@ -99,16 +99,15 @@ if (global.season_time == 7){
             <kind>1</kind>
             <string>if (keyboard_check(ord('1'))){
     global.time_multi = 1
+    scr_path_time_update() 
 }
 if (keyboard_check(ord('2'))){
     global.time_multi = 2
+    scr_path_time_update() 
 }
 if (keyboard_check(ord('3'))){
     global.time_multi = 3
-}
-
-if(keyboard_check(ord('4'))){
-    global.time_multi = 20
+    scr_path_time_update() 
 }
 
 </string>

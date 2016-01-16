@@ -13,6 +13,10 @@
     <sprite>sprites\spr_plus</sprite>
     <sprite>sprites\spr_test_wall</sprite>
     <sprite>sprites\spr_worker_lumberjack</sprite>
+    <sprite>sprites\spr_player_down_alpha</sprite>
+    <sprite>sprites\spr_player_up_alpha</sprite>
+    <sprite>sprites\spr_player_left_alpha</sprite>
+    <sprite>sprites\spr_player_right_alpha</sprite>
     <sprite>sprites\spr_drop_zone</sprite>
     <sprite>sprites\spr_building_workstation</sprite>
     <sprite>sprites\spr_delivery_zone</sprite>
@@ -20,10 +24,15 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_path_time_update.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_var_creator</object>
     <object>objects\obj_time</object>
     <object>objects\obj_mouse</object>
+    <object>objects\obj_desk</object>
+    <object>objects\obj_player</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_store</room>

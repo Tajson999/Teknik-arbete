@@ -27,6 +27,95 @@
             <kind>1</kind>
             <string>mp_grid_add_instances(global.grid, id, true)
 image_speed = 0
+
+id_x = x
+id_y = y
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (keyboard_check_direct(vk_escape) &amp;&amp; global.player_behind_desk == true){
+    with(obj_player){
+        x = 64
+        y = 64
+    }
+    global.player_behind_desk = false
+    global.player_movment = true
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(collision_rectangle(x,y,x+87,y+65,obj_mouse,true,false) != noone){
+    sprite_index = spr_building_workstation_outline
+}else{
+    sprite_index = spr_building_workstation
+}
+
+if(collision_rectangle(x,y,x+87,y+65,obj_mouse,true,false) != noone &amp;&amp; mouse_check_button(mb_left)){
+    with(obj_player){
+    
+        nearest_desk = instance_nearest(obj_mouse.x, obj_mouse.y, obj_desk)
+        go_x = (nearest_desk).x+43
+        go_y = (nearest_desk).y+96
+    
+        mp_grid_path(global.grid,global.player_path,x,y,go_x,go_y,true)
+        
+        
+            path_set_kind(global.player_path, 1)
+            path_set_precision(global.player_path, 8)
+            path_start(global.player_path,6*global.time_multi,path_action_stop,true)
+        
+        // don't register at end of path and shows error message for some reason
+        path_end_x = path_get_x(global.player_path, 0.5)
+        path_end_y = path_get_y(global.player_path, 0.5)
+        
+        if(obj_player.x == path_end_x &amp;&amp; obj_player.y == path_end_y){
+            x = path_get_x(global.player_path, 1)
+            y = path_get_y(global.player_path, 1)
+            sprite_index = spr_player_up_alpha 
+            global.player_movment = false
+            global.player_behind_desk = true
+        }
+        
+    }
+}
 </string>
           </argument>
         </arguments>

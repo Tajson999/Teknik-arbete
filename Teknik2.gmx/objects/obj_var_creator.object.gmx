@@ -36,6 +36,8 @@ global.currentworker = 0
 global.season = 1
 global.season_time = 1 //what day of the season it is
 global.season_word = "Winter"
+//if player can move
+global.player_movment = true
 
 //cost for the food for you
 global.cost_food_for_you = 50
@@ -45,6 +47,9 @@ global.time_multi = 1
 
 //statistic
 global.stats_days = 0
+
+//if player is selling behind a desk
+global.player_behind_desk = false
 
 //create grid
 global.grid = mp_grid_create(0,0, room_width / 16, room_height / 16, 16,16)

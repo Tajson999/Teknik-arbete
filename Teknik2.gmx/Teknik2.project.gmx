@@ -27,6 +27,7 @@
     <sprite>sprites\spr_player_hitbox_down_right</sprite>
     <sprite>sprites\spr_drop_zone</sprite>
     <sprite>sprites\spr_building_workstation</sprite>
+    <sprite>sprites\spr_building_workstation_outline</sprite>
     <sprite>sprites\spr_delivery_zone</sprite>
     <sprite>sprites\spr_magic_milkman</sprite>
   </sprites>

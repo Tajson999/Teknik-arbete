@@ -63,10 +63,15 @@ if minutes==0 &amp;&amp; hours==24 // check if countdown has reached midnight
 {
     minuter=0
     hours=0
-    global.money = global.money - global.cost_food_for_you
+    if(global.player_behind_desk == true){
+        global.income += 100
+    }
+    global.money = global.money - global.cost_food_for_you + global.income
     global.season_time += 1
     global.stats_days += 1
 }
+
+// check if it needs to change season
 if (global.season_time == 7){
     global.season_time = 0
     if(global.season == 4){ //check if fall if fall set to winter

@@ -49,89 +49,93 @@ go_y = y
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(mouse_check_button(mb_left)){
-    go_x = obj_mouse.x
-    go_y = obj_mouse.y
-    mp_grid_path(global.grid,global.player_path,x,y,go_x,go_y,true)
-    
-    if !mp_grid_path(global.grid,global.player_path,x,y,go_x,go_y,true){
-    show_message ("No path")
-    
+            <string>if(global.player_movment == true){
+    if(mouse_check_button(mb_left)){
+        go_x = obj_mouse.x
+        go_y = obj_mouse.y
+        mp_grid_path(global.grid,global.player_path,x,y,go_x,go_y,true)
+        
+        if !mp_grid_path(global.grid,global.player_path,x,y,go_x,go_y,true){
+        show_message ("No path")
+        
     }else{
-    path_set_kind(global.player_path, 1)
-    path_set_precision(global.player_path, 8)
-    path_start(global.player_path,6*global.time_multi,path_action_stop,true)
+        path_set_kind(global.player_path, 1)
+        path_set_precision(global.player_path, 8)
+        path_start(global.player_path,6*global.time_multi,path_action_stop,true)
     }
-
     
-}
-
-var turn = point_direction(x,y,go_x, go_y);
-
-if(turn &gt; 100 &amp;&amp; turn &lt; 170){
-    sprite_index = spr_player_up_alpha
-    image_speed = .25
-    with(obj_player_hitbox){
-        sprite_index = spr_player_hitbox_up_left
-    }
-}
-if(turn &gt; 190 &amp;&amp; turn &lt; 260){
-    sprite_index = spr_player_down_alpha
-    image_speed = .25
-    with(obj_player_hitbox){
-        sprite_index = spr_player_hitbox_down_left
         
     }
-}
-if(turn &gt; 280 &amp;&amp; turn &lt; 350){
-    sprite_index = spr_player_down_alpha
+    
+    var turn = point_direction(x,y,go_x, go_y);
+    
+    if(turn &gt; 100 &amp;&amp; turn &lt; 170){
+        sprite_index = spr_player_up_alpha
         image_speed = .25
-    with(obj_player_hitbox){
-        sprite_index = spr_player_hitbox_down_right
+        with(obj_player_hitbox){
+            sprite_index = spr_player_hitbox_up_left
+        }
     }
-}
-if(turn &lt; 80 &amp;&amp; turn &gt; 10){
-    sprite_index = spr_player_up_alpha
+    if(turn &gt; 190 &amp;&amp; turn &lt; 260){
+        sprite_index = spr_player_down_alpha
         image_speed = .25
-    with(obj_player_hitbox){
-        sprite_index = spr_player_hitbox_up_right
+        with(obj_player_hitbox){
+            sprite_index = spr_player_hitbox_down_left
+            
+        }
     }
-}
-if(turn &lt; 10 || turn &gt; 350){
-    sprite_index = spr_player_right_alpha
-        image_speed = .25
-    with(obj_player_hitbox){
-        sprite_index = spr_player_hitbox_right
+    if(turn &gt; 280 &amp;&amp; turn &lt; 350){
+        sprite_index = spr_player_down_alpha
+            image_speed = .25
+        with(obj_player_hitbox){
+            sprite_index = spr_player_hitbox_down_right
+        }
     }
-}
-if(turn &lt; 100 &amp;&amp; turn &gt; 80){
-    sprite_index = spr_player_up_alpha
-        image_speed = .25
-    with(obj_player_hitbox){
-        sprite_index = spr_player_hitbox_up
+    if(turn &lt; 80 &amp;&amp; turn &gt; 10){
+        sprite_index = spr_player_up_alpha
+            image_speed = .25
+        with(obj_player_hitbox){
+            sprite_index = spr_player_hitbox_up_right
+        }
     }
-}
-if(turn &lt; 190 &amp;&amp; turn &gt; 170){
-    sprite_index = spr_player_left_alpha
-        image_speed = .25
-    with(obj_player_hitbox){
-        sprite_index = spr_player_hitbox_left
+    if(turn &lt; 10 || turn &gt; 350){
+        sprite_index = spr_player_right_alpha
+            image_speed = .25
+        with(obj_player_hitbox){
+            sprite_index = spr_player_hitbox_right
+        }
     }
-}
-if(turn &lt; 280 &amp;&amp; turn &gt; 260){
-    sprite_index = spr_player_down_alpha
-        image_speed = .25
-    with(obj_player_hitbox){
-        sprite_index = spr_player_hitbox_down
+    if(turn &lt; 100 &amp;&amp; turn &gt; 80){
+        sprite_index = spr_player_up_alpha
+            image_speed = .25
+        with(obj_player_hitbox){
+            sprite_index = spr_player_hitbox_up
+        }
     }
-}
-if(point_distance(x,y,go_x,go_y) &lt;= (6*global.time_multi)){
-    image_speed = 0
-}
+    if(turn &lt; 190 &amp;&amp; turn &gt; 170){
+        sprite_index = spr_player_left_alpha
+            image_speed = .25
+        with(obj_player_hitbox){
+            sprite_index = spr_player_hitbox_left
+        }
+    }
+    if(turn &lt; 280 &amp;&amp; turn &gt; 260){
+        sprite_index = spr_player_down_alpha
+            image_speed = .25
+        with(obj_player_hitbox){
+            sprite_index = spr_player_hitbox_down
+        }
+    }
+    if(point_distance(x,y,go_x,go_y) &lt;= (6*global.time_multi)){
+        speed = 0
+        x = go_x
+        y = go_y
+        image_speed = 0
+    }
 
 
 
-
+}
 </string>
           </argument>
         </arguments>

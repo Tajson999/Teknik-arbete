@@ -61,7 +61,6 @@ go_y = y
     path_set_kind(global.player_path, 1)
     path_set_precision(global.player_path, 8)
     path_start(global.player_path,6*global.time_multi,path_action_stop,true)
-    image_speed = 0
     }
 
     
@@ -125,6 +124,9 @@ if(turn &lt; 280 &amp;&amp; turn &gt; 260){
     with(obj_player_hitbox){
         sprite_index = spr_player_hitbox_down
     }
+}
+if(point_distance(x,y,go_x,go_y) &lt;= (6*global.time_multi)){
+    image_speed = 0
 }
 
 

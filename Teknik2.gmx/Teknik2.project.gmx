@@ -30,9 +30,14 @@
     <sprite>sprites\spr_building_workstation_outline</sprite>
     <sprite>sprites\spr_delivery_zone</sprite>
     <sprite>sprites\spr_magic_milkman</sprite>
+    <sprite>sprites\spr_desk</sprite>
+    <sprite>sprites\spr_desk_outline</sprite>
+    <sprite>sprites\spr_money_popup</sprite>
   </sprites>
   <backgrounds name="background"/>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path_money_popup</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\scr_path_time_update.gml</script>
   </scripts>
@@ -43,6 +48,7 @@
     <object>objects\obj_desk</object>
     <object>objects\obj_player</object>
     <object>objects\obj_player_hitbox</object>
+    <object>objects\obj_money_popup</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_store</room>

@@ -66,7 +66,7 @@ if minutes==0 &amp;&amp; hours==24 // check if countdown has reached midnight
     if(global.player_behind_desk == true){
         global.income += 100
     }
-    global.money = global.money - global.cost_food_for_you + global.income
+    global.money = global.money - global.cost_food_for_you
     global.season_time += 1
     global.stats_days += 1
 }

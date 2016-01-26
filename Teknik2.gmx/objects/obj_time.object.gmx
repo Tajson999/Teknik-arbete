@@ -104,15 +104,15 @@ if (global.season_time == 7){
             <kind>1</kind>
             <string>if (keyboard_check(ord('1'))){
     global.time_multi = 1
-    scr_path_time_update() 
+    scr_path_time_update(1) 
 }
 if (keyboard_check(ord('2'))){
     global.time_multi = 2
-    scr_path_time_update() 
+    scr_path_time_update(2) 
 }
 if (keyboard_check(ord('3'))){
     global.time_multi = 3
-    scr_path_time_update() 
+    scr_path_time_update(3) 
 }
 
 </string>

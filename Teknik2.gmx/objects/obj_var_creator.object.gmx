@@ -32,6 +32,7 @@ global.income = 0
 global.loss = 0
 global.workermax = 0
 global.currentworker = 0
+global.mouse_over_desk = false
 // season   1=winter    2=Spring    3=summer    4=fall 
 global.season = 1
 global.season_time = 1 //what day of the season it is

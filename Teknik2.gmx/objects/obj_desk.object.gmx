@@ -114,8 +114,10 @@ if (keyboard_check_direct(vk_escape) &amp;&amp; global.player_behind_desk == tru
           <argument>
             <kind>1</kind>
             <string>if(collision_rectangle(x-32,y-16,x+32,y+16,obj_mouse,true,false) != noone){
+    global.mouse_over_desk = true
     sprite_index = spr_desk_outline
 }else{
+    global.mouse_over_desk = false
     sprite_index = spr_desk
 }
 

@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>go_x = x
 go_y = y
+sprite_index = spr_player_down_alpha;
+image_speed = 0;
 </string>
           </argument>
         </arguments>

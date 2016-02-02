@@ -14,9 +14,13 @@
     <sprite>sprites\spr_test_wall</sprite>
     <sprite>sprites\spr_worker_lumberjack</sprite>
     <sprite>sprites\spr_player_down_alpha</sprite>
+    <sprite>sprites\spr_player_down_refill</sprite>
     <sprite>sprites\spr_player_up_alpha</sprite>
+    <sprite>sprites\spr_player_up_refill</sprite>
     <sprite>sprites\spr_player_left_alpha</sprite>
+    <sprite>sprites\spr_player_left_refill</sprite>
     <sprite>sprites\spr_player_right_alpha</sprite>
+    <sprite>sprites\spr_player_right_refill</sprite>
     <sprite>sprites\spr_player_hitbox_left</sprite>
     <sprite>sprites\spr_player_hitbox_right</sprite>
     <sprite>sprites\spr_player_hitbox_up</sprite>
@@ -33,6 +37,9 @@
     <sprite>sprites\spr_desk</sprite>
     <sprite>sprites\spr_desk_outline</sprite>
     <sprite>sprites\spr_money_popup</sprite>
+    <sprite>sprites\spr_box</sprite>
+    <sprite>sprites\spr_shelf</sprite>
+    <sprite>sprites\spr_customer</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
@@ -49,6 +56,9 @@
     <object>objects\obj_player</object>
     <object>objects\obj_player_hitbox</object>
     <object>objects\obj_money_popup</object>
+    <object>objects\obj_shelf</object>
+    <object>objects\obj_box</object>
+    <object>objects\obj_customer</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_store</room>

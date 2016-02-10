@@ -59,6 +59,7 @@
     <object>objects\obj_shelf</object>
     <object>objects\obj_box</object>
     <object>objects\obj_customer</object>
+    <object>objects\obj_entrance</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_store</room>

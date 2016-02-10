@@ -64,7 +64,7 @@ global.player_path = path_add()
 //add total shelf and array for shelf
 global.maxshelf[0,0] = 0
 global.maxshelf[0,1] = 0
-global.maxshelf = 0;
+global.maxshelf_numb = 0
 </string>
           </argument>
         </arguments>

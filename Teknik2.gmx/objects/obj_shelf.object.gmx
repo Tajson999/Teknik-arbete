@@ -26,9 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0;
-global.maxshelf += 1
-global.maxshelf[global.maxshelf,0] = "true"
-global.maxshelf[global.maxshelf,1] = "normal"
+global.maxshelf_numb += 1
+global.maxshelf[global.maxshelf_numb,0] = true
+global.maxshelf[global.maxshelf_numb,1] = "normal"
+global.maxshelf[global.maxshelf_numb,2] = id
 </string>
           </argument>
         </arguments>

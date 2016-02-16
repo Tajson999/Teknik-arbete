@@ -1,4 +1,4 @@
-if(argument0 != global.time_multi){
+
     with(obj_player){
         path_speed = 6*global.time_multi
     }
@@ -11,4 +11,4 @@ if(argument0 != global.time_multi){
     with(obj_customer){
         path_speed = 6*global.time_multi
     }
-}
+

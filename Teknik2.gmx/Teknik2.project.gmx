@@ -41,6 +41,7 @@
     <sprite>sprites\spr_box</sprite>
     <sprite>sprites\spr_shelf</sprite>
     <sprite>sprites\spr_customer</sprite>
+    <sprite>sprites\spr_costumer</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">

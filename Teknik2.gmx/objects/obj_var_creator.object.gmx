@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.money = 1000
+            <string>randomize() //set a rancom seed
+
+global.money = 1000
 global.debt = 0 //total debt
 global.debt_intress = 0 //cost for the debt per day/month?
 global.income = 0

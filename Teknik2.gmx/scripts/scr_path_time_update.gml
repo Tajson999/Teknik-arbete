@@ -3,7 +3,9 @@
         path_speed = 6*global.time_multi
     }
     with(obj_desk){
-        alarm[0] = (alarm[0]/global.time_multi)
+        if(alarm_get(alarm[0]) != -1){
+            alarm[0] = alarm_get(alarm[0])/golbal.time_multi
+        }
     }
     with(obj_money_popup){
         path_speed = 6*global.time_multi
@@ -13,5 +15,10 @@
     }
     with(obj_customer){
         path_speed = 6*global.time_multi
+    }
+    with(obj_time){
+        if(alarm_get(alarm[0]) != -1){
+            alarm[0] = alarm_get(alarm[0])/golbal.time_multi
+        }
     }
 

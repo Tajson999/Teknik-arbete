@@ -26,9 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>// Set Your Time Start Time
-global.minutes = 1; //Set The Starting minutes
-global.hours = 23; //Set The Starting hours
-alarm[0]=7; //Set alarm for how fast one min should go
+global.minutes = 0; //Set The Starting minutes
+global.hours = 6; //Set The Starting hours
+alarm[0]=4/global.time_multi; //Set alarm for how fast one min should go
 
 </string>
           </argument>
@@ -58,7 +58,7 @@ if global.minutes &gt;= 60 // check if minutes bigger than 60
     global.minutes = 0;// reset minutes
     global.hours +=1;//add one to hours
 }
-alarm[0]=7/global.time_multi;//reset alarm
+alarm[0]=4/global.time_multi;//reset alarm
 if global.minutes==0 &amp;&amp; global.hours==24 // check if countdown has reached midnight
 {
     global.minuter=0

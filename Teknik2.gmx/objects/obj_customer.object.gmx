@@ -3,7 +3,7 @@
   <spriteName>spr_player_down_beta</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-3</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -119,21 +119,9 @@ if(going_out == true){ // checks if you are heading to the exit
     }
 }else{
     if( path_position == 1){ //if path is done
-           
+
         if(alarm9 == true){
-            
-            near_shelf = instance_nearest(x,y,obj_shelf)
-            if(point_distance(x,y,(near_shelf).x, (near_shelf).y) &lt;= 64){
-                with(near_shelf){
-                    if(image_index &gt; 0){ // remove 1 stack on shelf
-                        image_index -= 1
-                        global.money += 20
-                        instance_create(x,y-64,obj_money_popup_20)
-                    }else{
-                        instance_create(x+32,y-64,obj_speak_unhappy)
-                    }
-                }
-            }
+
         
             random_factor += 0.1
             again = random(1) + random_factor
@@ -154,9 +142,22 @@ if(going_out == true){ // checks if you are heading to the exit
             }
         alarm9 = false
         }else{
-            if(alarm9_runing == false){ 
-                alarm[9] = 25
+            if(alarm9_runing == false){ //make sure the code only runs one time per shelf
+                alarm[9] = 30
                 alarm9_runing = true
+                                   
+                near_shelf = instance_nearest(x,y,obj_shelf)
+                if(point_distance(x,y,(near_shelf).x, (near_shelf).y) &lt;= 64){
+                    with(near_shelf){ // with the nearest shelf
+                        if(image_index &gt; 0){ // remove 1 stack on shelf
+                            image_index -= 1
+                            global.money += 20
+                            instance_create(x,y-64,obj_money_popup_20)
+                        }else{
+                            instance_create(x+32,y-64,obj_speak_unhappy)//create feeling
+                        }
+                    }
+                }
             }
         }
     }

@@ -67,6 +67,8 @@ global.player_path = path_add()
 global.maxshelf[0,0] = 0
 global.maxshelf[0,1] = 0
 global.maxshelf_numb = 0
+
+global.open = true
 </string>
           </argument>
         </arguments>

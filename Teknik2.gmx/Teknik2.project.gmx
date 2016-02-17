@@ -44,6 +44,9 @@
     <sprite>sprites\spr_customer</sprite>
     <sprite>sprites\spr_costumer</sprite>
     <sprite>sprites\spr_speak_unhappy</sprite>
+    <sprite>sprites\spr_button_quit</sprite>
+    <sprite>sprites\spr_button_save</sprite>
+    <sprite>sprites\spr_button_load</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
@@ -66,9 +69,12 @@
     <object>objects\obj_customer</object>
     <object>objects\obj_entrance</object>
     <object>objects\obj_speak_unhappy</object>
+    <object>objects\obj_button_quit</object>
+    <object>objects\obj_button_save</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_store</room>
+    <room>rooms\m_menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

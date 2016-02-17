@@ -26,9 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>// Set Your Time Start Time
-minutes = 1; //Set The Starting minutes
-hours = 23; //Set The Starting hours
-alarm[0]=7; //Set alarm for one second (room_speed)
+global.minutes = 1; //Set The Starting minutes
+global.hours = 23; //Set The Starting hours
+alarm[0]=7; //Set alarm for how fast one min should go
 
 </string>
           </argument>
@@ -52,17 +52,17 @@ alarm[0]=7; //Set alarm for one second (room_speed)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>minutes += 1;  
-if minutes &gt;= 60 // check if minutes bigger than 60
+            <string>global.minutes += 1;  
+if global.minutes &gt;= 60 // check if minutes bigger than 60
 {
-    minutes = 0;// reset minutes
-    hours +=1;//add one to hours
+    global.minutes = 0;// reset minutes
+    global.hours +=1;//add one to hours
 }
 alarm[0]=7/global.time_multi;//reset alarm
-if minutes==0 &amp;&amp; hours==24 // check if countdown has reached midnight
+if global.minutes==0 &amp;&amp; global.hours==24 // check if countdown has reached midnight
 {
-    minuter=0
-    hours=0
+    global.minuter=0
+    global.hours=0
     if(global.player_behind_desk == true){
         global.income += 100
     }
@@ -137,8 +137,8 @@ if (keyboard_check(ord('3'))){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>show_hours=string_repeat("0", 2-string_length(string(hours)))+string(hours);//if single digit add a leading 0
-show_minutes=string_repeat("0", 2-string_length(string(minutes)))+string(minutes);//if single digit add a leading 0
+            <string>show_hours=string_repeat("0", 2-string_length(string(global.hours)))+string(global.hours);//if single digit add a leading 0
+show_minutes=string_repeat("0", 2-string_length(string(global.minutes)))+string(global.minutes);//if single digit add a leading 0
 season_day = string(global.season_time)
 
 switch(global.season){

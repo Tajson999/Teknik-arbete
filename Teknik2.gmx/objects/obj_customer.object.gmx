@@ -40,6 +40,32 @@ path_set_kind(costumer_path, 0)
 path_set_precision(costumer_path, 0)
 double_alarm = false
 done = false
+alarm9 = false
+alarm9_runing = false
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="9">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm9 = true
+alarm9_runing = false
 </string>
           </argument>
         </arguments>
@@ -92,31 +118,45 @@ if(going_out == true){ // checks if you are heading to the exit
         instance_destroy()
     }
 }else{
-    if( path_position == 1 ){ //if path is done
-        near_shelf = instance_nearest(x,y,obj_shelf)
-        if(point_distance(x,y,(near_shelf).x, (near_shelf).y) &lt;= 64){
-            with(near_shelf){
-                if(image_index &gt; 0){ // remove 1 stack on shelf
-                    image_index -= 1
+    if( path_position == 1){ //if path is done
+           
+        if(alarm9 == true){
+            
+            near_shelf = instance_nearest(x,y,obj_shelf)
+            if(point_distance(x,y,(near_shelf).x, (near_shelf).y) &lt;= 64){
+                with(near_shelf){
+                    if(image_index &gt; 0){ // remove 1 stack on shelf
+                        image_index -= 1
+                        global.money += 20
+                        instance_create(x,y-64,obj_money_popup_20)
+                    }else{
+                        instance_create(x+32,y-64,obj_speak_unhappy)
+                    }
                 }
             }
-        }
-    
-        random_factor += 0.1
-        randomize() // randomize seed
-        again = random(1) + random_factor
-        if( again &lt;= 0.5 ){ //checks if you should go to a new shelf
-            if(global.maxshelf[shelf,0] == true){ //checks if the shelf exists
-                random_factor += 0.1 
-                mp_grid_path(global.grid, costumer_path, x, y, global.maxshelf[shelf,2].x, (global.maxshelf[shelf,2]).y, true) //set path to new shelf
-                path_start(costumer_path, 6*global.time_multi,path_action_stop , false) //start path
+        
+            random_factor += 0.1
+            again = random(1) + random_factor
+            randomize() // randomize seed
+            if( again &lt;= 0.5 ){ //checks if you should go to a new shelf
+                if(global.maxshelf[shelf,0] == true){ //checks if the shelf exists
+                    random_factor += 0.1 
+                    mp_grid_path(global.grid, costumer_path, x, y, global.maxshelf[shelf,2].x, (global.maxshelf[shelf,2]).y, true) //set path to new shelf
+                    path_start(costumer_path, 6*global.time_multi,path_action_stop , false) //start path
+                }
+            }else{ //if you are not going to a new shelf
+                 mp_grid_path(global.grid, costumer_path, x, y, obj_entrance.x, obj_entrance.y , true) //set path to exit
+                path_start(costumer_path, 6*global.time_multi,path_action_stop , true) // start path
+                if(done = false){ 
+                    alarm[0] = 10 // sets alarm to make going_out true
+                    done = true // fixes so it don't set alarm all the time to 10
+                }
             }
-        }else{ //if you are not going to a new shelf
-             mp_grid_path(global.grid, costumer_path, x, y, obj_entrance.x, obj_entrance.y , true) //set path to exit
-            path_start(costumer_path, 6*global.time_multi,path_action_stop , true) // start path
-            if(done = false){ 
-                alarm[0] = 10 // sets alarm to make going_out true
-                done = true // fixes so it don't set alarm all the time to 10
+        alarm9 = false
+        }else{
+            if(alarm9_runing == false){ 
+                alarm[9] = 25
+                alarm9_runing = true
             }
         }
     }

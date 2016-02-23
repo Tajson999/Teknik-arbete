@@ -48,12 +48,19 @@
     <sprite>sprites\spr_button_quit</sprite>
     <sprite>sprites\spr_button_save</sprite>
     <sprite>sprites\spr_button_load</sprite>
+    <sprite>sprites\spr_button_store</sprite>
+    <sprite>sprites\spr_button_back</sprite>
+    <sprite>sprites\spr_button_shelves_A</sprite>
+    <sprite>sprites\spr_button_shelves_B</sprite>
+    <sprite>sprites\spr_button_shelves_C</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
     <path>paths\path_money_popup</path>
   </paths>
   <scripts name="scripts">
+    <script>scripts\scr_start_store_shelves_A.gml</script>
+    <script>scripts\scr_start_store_shelves_B.gml</script>
     <script>scripts\scr_path_time_update.gml</script>
   </scripts>
   <objects name="objects">
@@ -73,10 +80,18 @@
     <object>objects\obj_button_quit</object>
     <object>objects\obj_button_save</object>
     <object>objects\obj_menu</object>
+    <object>objects\obj_button_store</object>
+    <object>objects\obj_button_shelves_A</object>
+    <object>objects\obj_button_shelves_B</object>
+    <object>objects\obj_button_shelves_C</object>
+    <object>objects\obj_button_back_store</object>
+    <object>objects\obj_cheat</object>
+    <object>objects\obj_test</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_store</room>
     <room>rooms\m_menu</room>
+    <room>rooms\m_store</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -42,6 +42,11 @@ global.season_word = "Winter"
 //if player can move
 global.player_movment = true
 
+//shelves for start store
+global.start_store_shelves_A = false
+global.start_store_shelves_B = false
+global.start_store_shelves_C = false
+
 //cost for the food for you
 global.cost_food_for_you = 50
 
@@ -69,6 +74,35 @@ global.maxshelf[0,1] = 0
 global.maxshelf_numb = 0
 
 global.open = true
+
+global.previous_room = Start_store
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///room manger
+if(global.start_store_shelves_A == true){
+    scr_start_store_shelves_A()
+}
+if(global.start_store_shelves_B == true){
+    scr_start_store_shelves_B()
+}
 </string>
           </argument>
         </arguments>

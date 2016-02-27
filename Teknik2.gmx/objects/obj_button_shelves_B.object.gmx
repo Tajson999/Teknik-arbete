@@ -29,7 +29,10 @@
         if(global.money &gt;= 3000 &amp;&amp; global.start_store_shelves_B == false){
             global.money -= 3000
             global.start_store_shelves_B = true
-            scr_start_store_shelves_B()
+            with(obj_Start_store_manager){
+                alarm[1] = 2
+            }
+            room_goto(Start_store)
         }
 }
 </string>

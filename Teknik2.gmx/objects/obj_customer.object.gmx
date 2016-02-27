@@ -32,7 +32,7 @@ costumer_path = path_add()
 max_shelf = global.maxshelf_numb
 shelf = round(random_range(1,max_shelf))
     if(global.maxshelf[shelf,0] == true){
-        mp_grid_path(global.grid, costumer_path, obj_entrance.x, obj_entrance.y, (global.maxshelf[shelf,2]).x, (global.maxshelf[shelf,2]).y, true)
+        mp_grid_path(global.grid, costumer_path, obj_entrance.x, obj_entrance.y, (global.maxshelf[shelf,2]).x, (global.maxshelf[shelf,2]).y+48, true)
         path_start(costumer_path, 6*global.time_multi,path_action_stop , true)
     }
 
@@ -129,7 +129,7 @@ if(going_out == true){ // checks if you are heading to the exit
             if( again &lt;= 0.5 ){ //checks if you should go to a new shelf
                 if(global.maxshelf[shelf,0] == true){ //checks if the shelf exists
                     random_factor += 0.1 
-                    mp_grid_path(global.grid, costumer_path, x, y, global.maxshelf[shelf,2].x, (global.maxshelf[shelf,2]).y, true) //set path to new shelf
+                    mp_grid_path(global.grid, costumer_path, x, y, global.maxshelf[shelf,2].x, (global.maxshelf[shelf,2]).y+48, true) //set path to new shelf
                     path_start(costumer_path, 6*global.time_multi,path_action_stop , false) //start path
                 }
             }else{ //if you are not going to a new shelf

@@ -66,6 +66,7 @@
     <instance objName="obj_menu" x="32" y="96" name="inst_9545A72A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button_store" x="32" y="672" name="inst_68F6A954" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cheat" x="32" y="288" name="inst_F8756C9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Start_store_manager" x="32" y="128" name="inst_A4629285" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -64,6 +64,15 @@
     <script>scripts\scr_path_time_update.gml</script>
   </scripts>
   <objects name="objects">
+    <objects name="Buttons">
+      <object>objects\obj_button_save</object>
+      <object>objects\obj_button_shelves_A</object>
+      <object>objects\obj_button_shelves_B</object>
+      <object>objects\obj_button_shelves_C</object>
+      <object>objects\obj_button_back_store</object>
+      <object>objects\obj_button_store</object>
+      <object>objects\obj_button_quit</object>
+    </objects>
     <object>objects\obj_var_creator</object>
     <object>objects\obj_time</object>
     <object>objects\obj_mouse</object>
@@ -75,18 +84,12 @@
     <object>objects\obj_shelf</object>
     <object>objects\obj_box</object>
     <object>objects\obj_customer</object>
-    <object>objects\obj_entrance</object>
     <object>objects\obj_speak_unhappy</object>
-    <object>objects\obj_button_quit</object>
-    <object>objects\obj_button_save</object>
+    <object>objects\obj_entrance</object>
     <object>objects\obj_menu</object>
-    <object>objects\obj_button_store</object>
-    <object>objects\obj_button_shelves_A</object>
-    <object>objects\obj_button_shelves_B</object>
-    <object>objects\obj_button_shelves_C</object>
-    <object>objects\obj_button_back_store</object>
     <object>objects\obj_cheat</object>
     <object>objects\obj_test</object>
+    <object>objects\obj_Start_store_manager</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_store</room>

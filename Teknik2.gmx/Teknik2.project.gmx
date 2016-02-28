@@ -66,6 +66,7 @@
   <objects name="objects">
     <objects name="Buttons">
       <object>objects\obj_button_save</object>
+      <object>objects\obj_button_load</object>
       <object>objects\obj_button_shelves_A</object>
       <object>objects\obj_button_shelves_B</object>
       <object>objects\obj_button_shelves_C</object>

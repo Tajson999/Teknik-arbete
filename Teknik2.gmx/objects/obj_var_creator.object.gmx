@@ -77,6 +77,8 @@ global.maxshelf_numb = 0
 global.open = true
 
 global.previous_room = Start_store
+
+global.current_store = Start_store
 </string>
           </argument>
         </arguments>

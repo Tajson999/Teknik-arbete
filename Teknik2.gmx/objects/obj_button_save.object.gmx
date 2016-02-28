@@ -48,6 +48,7 @@
         ini_write_real("save1", "maxshelf[i]", global.maxshelf[i,2])
     }
     ini_write_real("save1", "open", global.open)
+    ini_write_real("save1", "current store", global.current_store)
     ini_close()
 }
 </string>

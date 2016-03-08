@@ -53,6 +53,8 @@
     <sprite>sprites\spr_button_shelves_A</sprite>
     <sprite>sprites\spr_button_shelves_B</sprite>
     <sprite>sprites\spr_button_shelves_C</sprite>
+    <sprite>sprites\spr_PC_desk</sprite>
+    <sprite>sprites\spr_door</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
@@ -92,6 +94,7 @@
     <object>objects\obj_test</object>
     <object>objects\obj_Start_store_manager</object>
     <object>objects\obj_debug_draw_grid</object>
+    <object>objects\obj_door</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_store</room>

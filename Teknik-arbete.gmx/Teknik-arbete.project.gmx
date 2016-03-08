@@ -90,9 +90,7 @@
     <script>scripts\scr_define_path_back.gml</script>
     <script>scripts\scr_remove_buttons_WIP.gml</script>
   </scripts>
-  <fonts name="fonts">
-    <font>fonts\fnt</font>
-  </fonts>
+  <fonts name="fonts"/>
   <objects name="objects">
     <object>objects\obj_test_wall</object>
     <object>objects\obj_tree</object>

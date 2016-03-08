@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>// Set Your Time Start Time
 global.minutes = 0; //Set The Starting minutes
-global.hours = 6; //Set The Starting hours
+global.hours = 18; //Set The Starting hours
 alarm[0]=4/global.time_multi; //Set alarm for how fast one min should go
 
 </string>

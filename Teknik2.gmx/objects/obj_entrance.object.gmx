@@ -31,6 +31,7 @@ if(global.hours &gt;= 8 &amp;&amp; global.hours &lt;= 20){
 }else {
     global.open = false
 }
+alarm0 = false
 </string>
           </argument>
         </arguments>
@@ -58,6 +59,7 @@ if(global.hours &gt;= 8 &amp;&amp; global.hours &lt;= 20){
 if(global.hours &gt;= 8 &amp;&amp; global.hours &lt;= 20){
    alarm[0] = 100/global.time_multi
 }
+alram0 = false
 </string>
           </argument>
         </arguments>
@@ -83,6 +85,13 @@ if(global.hours &gt;= 8 &amp;&amp; global.hours &lt;= 20){
             <string>if(global.open == false &amp;&amp; global.hours &gt;= 8 &amp;&amp; global.hours &lt;= 20){
    alarm[0] = 100/global.time_multi 
    global.open = true
+}else if(global.hours &lt; 8 || global.hours &gt; 20){
+    global.open = false
+}else if(global.open == true){
+    if(alarm0 == false){
+        alarm[0] = 100/global.time_multi
+        alarm0 = true    
+    }
 }
 </string>
           </argument>

@@ -33,6 +33,7 @@ global.maxshelf[global.maxshelf_numb,2] = id
 
 mp_grid_add_instances(global.grid, id, true)
 
+
 </string>
           </argument>
         </arguments>
@@ -55,27 +56,24 @@ mp_grid_add_instances(global.grid, id, true)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*if(collision_rectangle(x-32,y-16,x+32,y+16,obj_mouse,true,false) != noone){
+            <string>if(collision_rectangle(x-32,y-16,x+32,y+16,obj_mouse,true,false) != noone){
     global.mouse_over_desk = true
-    sprite_index = spr_desk_outline
 }else{
     global.mouse_over_desk = false
-    sprite_index = spr_desk
-}*/
+}
 
 if(collision_rectangle(x-32,y-16,x+32,y+16,obj_mouse,true,false) != noone &amp;&amp; mouse_check_button(mb_left)){
     with(obj_player){
     
         nearest_shelf = instance_nearest(obj_mouse.x, obj_mouse.y, obj_shelf)
-        go_x = (nearest_shelf).x
-        go_y = (nearest_shelf).y+32
+        go_x_shelf = (nearest_shelf).x
+        go_y_shelf = (nearest_shelf).y+32
     
-        mp_grid_path(global.grid,global.player_path_shelf,x,y,go_x,go_y,true)
-        
         
             path_set_kind(global.player_path_shelf, 1)
             path_set_precision(global.player_path_shelf, 8)
-            path_start(global.player_path,6*global.time_multi,path_action_stop,true)
+            mp_grid_path(global.grid,global.player_path_shelf,x,y,go_x_shelf,go_y_shelf,true)
+            path_start(global.player_path_shelf,6*global.time_multi,path_action_stop,false)
        if(refill == true){
             if (path_position = 1){
                 with(nearest_shelf){

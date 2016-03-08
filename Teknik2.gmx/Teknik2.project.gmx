@@ -91,6 +91,7 @@
     <object>objects\obj_cheat</object>
     <object>objects\obj_test</object>
     <object>objects\obj_Start_store_manager</object>
+    <object>objects\obj_debug_draw_grid</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_store</room>

@@ -8,53 +8,66 @@
   <sprites name="sprites">
     <sprite>sprites\spr_minus</sprite>
     <sprite>sprites\spr_mouse</sprite>
-    <sprite>sprites\spr_tree_alpha</sprite>
     <sprite>sprites\spr_branch</sprite>
     <sprite>sprites\spr_plus</sprite>
     <sprite>sprites\spr_test_wall</sprite>
+    <sprites name="player">
+      <sprite>sprites\spr_player_down_beta</sprite>
+      <sprite>sprites\spr_player_hitbox_down_right</sprite>
+      <sprite>sprites\spr_doormat</sprite>
+      <sprite>sprites\spr_player_hitbox_right</sprite>
+      <sprite>sprites\spr_player_hitbox_down</sprite>
+      <sprite>sprites\spr_player_hitbox_up_left</sprite>
+      <sprite>sprites\spr_player_hitbox_down_left</sprite>
+      <sprite>sprites\spr_player_hitbox_left</sprite>
+      <sprite>sprites\spr_player_hitbox_up_right</sprite>
+      <sprite>sprites\spr_player_hitbox_up</sprite>
+      <sprite>sprites\spr_player_up_refill</sprite>
+      <sprite>sprites\spr_player_left_refill</sprite>
+      <sprite>sprites\spr_player_right_refill</sprite>
+      <sprite>sprites\spr_player_down_refill</sprite>
+      <sprite>sprites\spr_player_down_alpha</sprite>
+      <sprite>sprites\spr_player_left_alpha</sprite>
+      <sprite>sprites\spr_player_right_alpha</sprite>
+      <sprite>sprites\spr_player_up_alpha</sprite>
+    </sprites>
     <sprite>sprites\spr_worker_lumberjack</sprite>
-    <sprite>sprites\spr_player_down_alpha</sprite>
-    <sprite>sprites\spr_player_down_beta</sprite>
-    <sprite>sprites\spr_player_down_refill</sprite>
-    <sprite>sprites\spr_player_up_alpha</sprite>
-    <sprite>sprites\spr_player_up_refill</sprite>
-    <sprite>sprites\spr_player_left_alpha</sprite>
-    <sprite>sprites\spr_player_left_refill</sprite>
-    <sprite>sprites\spr_player_right_alpha</sprite>
-    <sprite>sprites\spr_player_right_refill</sprite>
-    <sprite>sprites\spr_player_hitbox_left</sprite>
-    <sprite>sprites\spr_doormat</sprite>
-    <sprite>sprites\spr_player_hitbox_right</sprite>
-    <sprite>sprites\spr_player_hitbox_up</sprite>
-    <sprite>sprites\spr_player_hitbox_up_left</sprite>
-    <sprite>sprites\spr_player_hitbox_up_right</sprite>
-    <sprite>sprites\spr_player_hitbox_down</sprite>
-    <sprite>sprites\spr_player_hitbox_down_left</sprite>
-    <sprite>sprites\spr_player_hitbox_down_right</sprite>
     <sprite>sprites\spr_drop_zone</sprite>
-    <sprite>sprites\spr_building_workstation</sprite>
-    <sprite>sprites\spr_building_workstation_outline</sprite>
     <sprite>sprites\spr_delivery_zone</sprite>
-    <sprite>sprites\spr_magic_milkman</sprite>
-    <sprite>sprites\spr_desk</sprite>
-    <sprite>sprites\spr_desk_outline</sprite>
     <sprite>sprites\spr_money_popup</sprite>
+    <sprites name="characters">
+      <sprite>sprites\spr_costumer</sprite>
+      <sprite>sprites\spr_speak_unhappy</sprite>
+      <sprite>sprites\spr_magic_milkman</sprite>
+    </sprites>
+    <sprites name="objects">
+      <sprite>sprites\spr_tree_alpha</sprite>
+      <sprite>sprites\spr_box</sprite>
+      <sprite>sprites\spr_desk_outline</sprite>
+      <sprite>sprites\spr_desk</sprite>
+      <sprite>sprites\spr_building_workstation</sprite>
+      <sprite>sprites\spr_building_workstation_outline</sprite>
+    </sprites>
     <sprite>sprites\spr_money_popup_20</sprite>
-    <sprite>sprites\spr_box</sprite>
     <sprite>sprites\spr_shelf</sprite>
     <sprite>sprites\spr_customer</sprite>
-    <sprite>sprites\spr_costumer</sprite>
-    <sprite>sprites\spr_speak_unhappy</sprite>
-    <sprite>sprites\spr_button_quit</sprite>
-    <sprite>sprites\spr_button_save</sprite>
-    <sprite>sprites\spr_button_load</sprite>
-    <sprite>sprites\spr_button_store</sprite>
-    <sprite>sprites\spr_button_back</sprite>
-    <sprite>sprites\spr_button_shelves_A</sprite>
-    <sprite>sprites\spr_button_shelves_B</sprite>
-    <sprite>sprites\spr_button_shelves_C</sprite>
+    <sprites name="buttons">
+      <sprite>sprites\spr_button_quit</sprite>
+      <sprite>sprites\spr_button_store</sprite>
+      <sprite>sprites\spr_button_skilltree</sprite>
+      <sprite>sprites\spr_button_back</sprite>
+      <sprite>sprites\spr_button_save</sprite>
+      <sprite>sprites\spr_button_load</sprite>
+      <sprite>sprites\spr_button_shelves_A</sprite>
+      <sprite>sprites\spr_button_shelves_B</sprite>
+      <sprite>sprites\spr_button_shelves_C</sprite>
+      <sprite>sprites\spr_button_skill_store</sprite>
+    </sprites>
     <sprite>sprites\spr_PC_desk</sprite>
     <sprite>sprites\spr_door</sprite>
+    <sprites name="skill tree">
+      <sprite>sprites\spr_skills</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
@@ -74,10 +87,14 @@
       <object>objects\obj_button_shelves_C</object>
       <object>objects\obj_button_back_store</object>
       <object>objects\obj_button_store</object>
+      <object>objects\obj_button_skilltree</object>
       <object>objects\obj_button_quit</object>
     </objects>
-    <object>objects\obj_var_creator</object>
+    <objects name="Text">
+      <object>objects\obj_text_skilltree</object>
+    </objects>
     <object>objects\obj_time</object>
+    <object>objects\obj_var_creator</object>
     <object>objects\obj_mouse</object>
     <object>objects\obj_desk</object>
     <object>objects\obj_player</object>
@@ -100,6 +117,7 @@
     <room>rooms\Start_store</room>
     <room>rooms\m_menu</room>
     <room>rooms\m_store</room>
+    <room>rooms\rm_skill_tree</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

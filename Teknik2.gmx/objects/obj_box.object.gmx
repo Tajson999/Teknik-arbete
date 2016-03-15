@@ -68,7 +68,7 @@ if(collision_rectangle(x-16,y-16,x+16,y+16,obj_mouse,false,false) != noone &amp;
             path_set_kind(global.player_path, 1)
             path_set_precision(global.player_path, 8)
             path_start(global.player_path,6*global.time_multi,path_action_stop,true)          
-       refill = true 
+       global.refill = true 
         
         
     }

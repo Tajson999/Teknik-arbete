@@ -39,6 +39,37 @@ mp_grid_add_instances(global.grid, id, true)
         </arguments>
       </action>
     </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>nearest_shelf = instance_nearest(obj_mouse.x, obj_mouse.y, obj_shelf)
+if(global.refill == true &amp;&amp; mouse_check_button(mb_left) &amp;&amp; point_distance(obj_player.x, obj_player.y, (nearest_shelf).x, (nearest_shelf).y) &lt;= 48){
+            
+            
+                with(nearest_shelf){
+                    image_index = 9
+                
+            }
+       }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -58,6 +89,7 @@ mp_grid_add_instances(global.grid, id, true)
             <kind>1</kind>
             <string>if(collision_rectangle(x-32,y-16,x+32,y+16,obj_mouse,true,false) != noone){
     global.mouse_over_desk = true
+    
 }else{
     global.mouse_over_desk = false
 }
@@ -74,13 +106,7 @@ if(collision_rectangle(x-32,y-16,x+32,y+16,obj_mouse,true,false) != noone &amp;&
             path_set_precision(global.player_path_shelf, 8)
             mp_grid_path(global.grid,global.player_path_shelf,x,y,go_x_shelf,go_y_shelf,true)
             path_start(global.player_path_shelf,6*global.time_multi,path_action_stop,false)
-       if(refill == true){
-            if (path_position = 1){
-                with(nearest_shelf){
-                    image_index = 9
-                }
-            }
-       }     
+            
         
         
         

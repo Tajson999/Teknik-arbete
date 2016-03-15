@@ -53,7 +53,7 @@ refill = false
           <argument>
             <kind>1</kind>
             <string>if (keyboard_check(vk_escape)){
-    refill = false
+    global.refill = false
 }
 </string>
           </argument>
@@ -81,18 +81,19 @@ refill = false
     if(mouse_check_button(mb_left) &amp;&amp; global.mouse_over_desk = false){
         go_x = obj_mouse.x
         go_y = obj_mouse.y
-        mp_grid_path(global.grid,global.player_path,x,y,go_x,go_y,true)
-    
-        path_set_kind(global.player_path, 1)
-        path_set_precision(global.player_path, 8)
-        path_start(global.player_path,6*global.time_multi,path_action_stop,true)
-    
+        if(mp_grid_path(global.grid,global.player_path,x,y,go_x,go_y,true) == true){
+            mp_grid_path(global.grid,global.player_path,x,y,go_x,go_y,true)
+        
+            path_set_kind(global.player_path, 1)
+            path_set_precision(global.player_path, 8)
+            path_start(global.player_path,6*global.time_multi,path_action_stop,true)
+        }
     
         
     }
     
     var turn = point_direction(x,y,go_x, go_y);
-    if(refill == true){
+    if(global.refill == true){
         if (turn != 0){
             if(turn &gt; 100 &amp;&amp; turn &lt; 170){
                 sprite_index = spr_player_up_refill

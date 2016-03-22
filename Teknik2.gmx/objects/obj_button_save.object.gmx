@@ -49,6 +49,8 @@
     }
     ini_write_real("save1", "open", global.open)
     ini_write_real("save1", "current store", global.current_store)
+    ini_write_real("save1", "skill points", global.skill_points)
+    ini_write_real("save1", "skill store", global.skill_store)
     ini_close()
 }
 </string>

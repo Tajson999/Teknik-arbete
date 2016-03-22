@@ -6,11 +6,7 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_minus</sprite>
     <sprite>sprites\spr_mouse</sprite>
-    <sprite>sprites\spr_branch</sprite>
-    <sprite>sprites\spr_plus</sprite>
-    <sprite>sprites\spr_test_wall</sprite>
     <sprites name="player">
       <sprite>sprites\spr_player_down_beta</sprite>
       <sprite>sprites\spr_player_hitbox_down_right</sprite>
@@ -31,29 +27,34 @@
       <sprite>sprites\spr_player_right_alpha</sprite>
       <sprite>sprites\spr_player_up_alpha</sprite>
     </sprites>
-    <sprite>sprites\spr_worker_lumberjack</sprite>
-    <sprite>sprites\spr_drop_zone</sprite>
-    <sprite>sprites\spr_delivery_zone</sprite>
-    <sprite>sprites\spr_money_popup</sprite>
     <sprites name="characters">
       <sprite>sprites\spr_costumer</sprite>
       <sprite>sprites\spr_speak_unhappy</sprite>
       <sprite>sprites\spr_magic_milkman</sprite>
+      <sprite>sprites\spr_customer</sprite>
     </sprites>
     <sprites name="objects">
       <sprite>sprites\spr_tree_alpha</sprite>
+      <sprite>sprites\spr_test_wall</sprite>
+      <sprite>sprites\spr_worker_lumberjack</sprite>
+      <sprite>sprites\spr_plus</sprite>
       <sprite>sprites\spr_box</sprite>
+      <sprite>sprites\spr_drop_zone</sprite>
+      <sprite>sprites\spr_branch</sprite>
       <sprite>sprites\spr_desk_outline</sprite>
       <sprite>sprites\spr_desk</sprite>
+      <sprite>sprites\spr_minus</sprite>
       <sprite>sprites\spr_building_workstation</sprite>
       <sprite>sprites\spr_building_workstation_outline</sprite>
+      <sprite>sprites\spr_delivery_zone</sprite>
+      <sprite>sprites\spr_PC_desk</sprite>
+      <sprite>sprites\spr_door</sprite>
+      <sprite>sprites\spr_shelf</sprite>
     </sprites>
-    <sprite>sprites\spr_money_popup_20</sprite>
-    <sprite>sprites\spr_shelf</sprite>
-    <sprite>sprites\spr_customer</sprite>
     <sprites name="buttons">
       <sprite>sprites\spr_button_quit</sprite>
       <sprite>sprites\spr_button_store</sprite>
+      <sprite>sprites\spr_button_store_locked</sprite>
       <sprite>sprites\spr_button_skilltree</sprite>
       <sprite>sprites\spr_button_back</sprite>
       <sprite>sprites\spr_button_save</sprite>
@@ -62,11 +63,14 @@
       <sprite>sprites\spr_button_shelves_B</sprite>
       <sprite>sprites\spr_button_shelves_C</sprite>
       <sprite>sprites\spr_button_skill_store</sprite>
+      <sprite>sprites\spr_button_skilltree_store</sprite>
+      <sprite>sprites\spr_convert_to_skill</sprite>
     </sprites>
-    <sprite>sprites\spr_PC_desk</sprite>
-    <sprite>sprites\spr_door</sprite>
-    <sprites name="skill tree">
+    <sprites name="text">
+      <sprite>sprites\spr_money_popup_20</sprite>
+      <sprite>sprites\spr_money_popup</sprite>
       <sprite>sprites\spr_skills</sprite>
+      <sprite>sprites\spr_test_convert_to_skill</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -79,6 +83,8 @@
     <script>scripts\scr_path_time_update.gml</script>
   </scripts>
   <objects name="objects">
+    <object>objects\obj_test</object>
+    <object>objects\obj_mouse</object>
     <objects name="Buttons">
       <object>objects\obj_button_save</object>
       <object>objects\obj_button_load</object>
@@ -89,29 +95,35 @@
       <object>objects\obj_button_store</object>
       <object>objects\obj_button_skilltree</object>
       <object>objects\obj_button_quit</object>
+      <object>objects\obj_button_convert_to_skill</object>
+      <object>objects\obj_button_skilltree_store</object>
     </objects>
     <objects name="Text">
+      <object>objects\obj_money_popup_20</object>
+      <object>objects\obj_money_popup</object>
+      <object>objects\obj_speak_unhappy</object>
       <object>objects\obj_text_skilltree</object>
+      <object>objects\obj_text_convert_to_skill</object>
     </objects>
-    <object>objects\obj_time</object>
-    <object>objects\obj_var_creator</object>
-    <object>objects\obj_mouse</object>
-    <object>objects\obj_desk</object>
-    <object>objects\obj_player</object>
-    <object>objects\obj_player_hitbox</object>
-    <object>objects\obj_money_popup</object>
-    <object>objects\obj_money_popup_20</object>
-    <object>objects\obj_shelf</object>
-    <object>objects\obj_box</object>
-    <object>objects\obj_customer</object>
-    <object>objects\obj_speak_unhappy</object>
-    <object>objects\obj_entrance</object>
-    <object>objects\obj_menu</object>
-    <object>objects\obj_cheat</object>
-    <object>objects\obj_test</object>
-    <object>objects\obj_Start_store_manager</object>
-    <object>objects\obj_debug_draw_grid</object>
-    <object>objects\obj_door</object>
+    <objects name="controlers etc">
+      <object>objects\obj_menu</object>
+      <object>objects\obj_Start_store_manager</object>
+      <object>objects\obj_time</object>
+      <object>objects\obj_debug_draw_grid</object>
+      <object>objects\obj_cheat</object>
+      <object>objects\obj_var_creator</object>
+      <object>objects\obj_player_hitbox</object>
+      <object>objects\obj_resources</object>
+    </objects>
+    <objects name="objects">
+      <object>objects\obj_customer</object>
+      <object>objects\obj_door</object>
+      <object>objects\obj_desk</object>
+      <object>objects\obj_player</object>
+      <object>objects\obj_entrance</object>
+      <object>objects\obj_box</object>
+      <object>objects\obj_shelf</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_store</room>

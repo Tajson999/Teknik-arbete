@@ -33,6 +33,7 @@
 
 
 
+global.time_stop = false // if time is stoped set to true 
 
 global.money = 1000
 global.debt = 0 //total debt
@@ -88,6 +89,12 @@ global.previous_room = Start_store
 global.current_store = Start_store
 
 global.refill = false
+
+//skill points &amp; skills
+global.skill_points = 10;
+
+global.skill_store = false
+//global.skill_what the skill is | false means not unlocked true means unlocked
 </string>
           </argument>
         </arguments>

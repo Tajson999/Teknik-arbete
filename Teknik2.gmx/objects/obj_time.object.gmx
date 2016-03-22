@@ -58,7 +58,9 @@ if global.minutes &gt;= 60 // check if minutes bigger than 60
     global.minutes = 0;// reset minutes
     global.hours +=1;//add one to hours
 }
-alarm[0]=4/global.time_multi;//reset alarm
+if(global.time_stop == false){
+    alarm[0]=4/global.time_multi;//reset alarm
+}
 if global.minutes==0 &amp;&amp; global.hours==24 // check if countdown has reached midnight
 {
     global.minuter=0
@@ -113,6 +115,9 @@ if (keyboard_check(ord('2'))){
 if (keyboard_check(ord('3'))){
     global.time_multi = 3
     scr_path_time_update(3) 
+}
+if(alarm[0] == (-1) &amp;&amp; global.time_stop == false){
+    alarm[0] = 4/global.time_multi;
 }
 
 </string>

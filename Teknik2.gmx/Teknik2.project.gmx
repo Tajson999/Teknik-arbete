@@ -47,9 +47,6 @@
       <sprite>sprites\spr_building_workstation</sprite>
       <sprite>sprites\spr_building_workstation_outline</sprite>
       <sprite>sprites\spr_delivery_zone</sprite>
-      <sprite>sprites\spr_PC_desk</sprite>
-      <sprite>sprites\spr_door</sprite>
-      <sprite>sprites\spr_shelf</sprite>
     </sprites>
     <sprites name="buttons">
       <sprite>sprites\spr_button_quit</sprite>
@@ -71,6 +68,15 @@
       <sprite>sprites\spr_money_popup</sprite>
       <sprite>sprites\spr_skills</sprite>
       <sprite>sprites\spr_test_convert_to_skill</sprite>
+    </sprites>
+    <sprites name="In Prog. Art">
+      <sprite>sprites\spr_shop_counter</sprite>
+      <sprite>sprites\spr_player_gamma</sprite>
+      <sprite>sprites\spr_door</sprite>
+      <sprite>sprites\spr_shelf</sprite>
+      <sprite>sprites\spr_PC_desk</sprite>
+      <sprite>sprites\spr_costumer_beta</sprite>
+      <sprite>sprites\spr_costumer2_beta</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -124,8 +130,15 @@
       <object>objects\obj_box</object>
       <object>objects\obj_shelf</object>
     </objects>
+    <objects name="In Prog. objects">
+      <object>objects\obj_player_gamma</object>
+      <object>objects\obj_shop_counter</object>
+      <object>objects\obj_costumer_beta</object>
+      <object>objects\obj_costumer2_beta</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Graphics_Test_Room</room>
     <room>rooms\Start_store</room>
     <room>rooms\m_menu</room>
     <room>rooms\m_store</room>

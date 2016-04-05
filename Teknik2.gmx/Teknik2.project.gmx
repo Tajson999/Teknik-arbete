@@ -47,6 +47,7 @@
       <sprite>sprites\spr_building_workstation</sprite>
       <sprite>sprites\spr_building_workstation_outline</sprite>
       <sprite>sprites\spr_delivery_zone</sprite>
+      <sprite>sprites\spr_shelf</sprite>
     </sprites>
     <sprites name="buttons">
       <sprite>sprites\spr_button_quit</sprite>
@@ -73,13 +74,20 @@
       <sprite>sprites\spr_shop_counter</sprite>
       <sprite>sprites\spr_player_gamma</sprite>
       <sprite>sprites\spr_door</sprite>
-      <sprite>sprites\spr_shelf</sprite>
       <sprite>sprites\spr_PC_desk</sprite>
       <sprite>sprites\spr_costumer_beta</sprite>
       <sprite>sprites\spr_costumer2_beta</sprite>
+      <sprite>sprites\spr_new_shelfs</sprite>
+      <sprite>sprites\spr_new_shelf</sprite>
+      <sprite>sprites\spr_windows</sprite>
+      <sprite>sprites\spr_door_beta</sprite>
     </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\Floor_Tiles_Model_1</background>
+    <background>background\Painting_Model_1</background>
+    <background>background\Wall_Model_1</background>
+  </backgrounds>
   <paths name="paths">
     <path>paths\path_money_popup</path>
   </paths>
@@ -134,7 +142,12 @@
       <object>objects\obj_player_gamma</object>
       <object>objects\obj_shop_counter</object>
       <object>objects\obj_costumer_beta</object>
+      <object>objects\object39</object>
       <object>objects\obj_costumer2_beta</object>
+      <object>objects\obj_new_shelf_p</object>
+      <object>objects\obj_new_shelf_r</object>
+      <object>objects\obj_windows</object>
+      <object>objects\obj_doors</object>
     </objects>
   </objects>
   <rooms name="rooms">

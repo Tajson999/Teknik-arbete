@@ -81,6 +81,7 @@
       <sprite>sprites\spr_new_shelf</sprite>
       <sprite>sprites\spr_windows</sprite>
       <sprite>sprites\spr_door_beta</sprite>
+      <sprite>sprites\spr_clock</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -148,6 +149,7 @@
       <object>objects\obj_new_shelf_r</object>
       <object>objects\obj_windows</object>
       <object>objects\obj_doors</object>
+      <object>objects\obj_clock</object>
     </objects>
   </objects>
   <rooms name="rooms">

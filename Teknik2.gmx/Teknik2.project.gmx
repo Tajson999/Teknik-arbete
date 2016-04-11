@@ -96,6 +96,7 @@
     <background>background\black</background>
     <background>background\Painting_Model_2</background>
     <background>background\Painting_Model_3</background>
+    <background>background\Support_Pillar_1</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_money_popup</path>

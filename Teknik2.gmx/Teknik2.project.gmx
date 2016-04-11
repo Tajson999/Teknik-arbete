@@ -3,6 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="1" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
@@ -82,12 +83,19 @@
       <sprite>sprites\spr_windows</sprite>
       <sprite>sprites\spr_door_beta</sprite>
       <sprite>sprites\spr_clock</sprite>
+      <sprite>sprites\door_model_2</sprite>
+      <sprite>sprites\spr_Shop_Stand_1</sprite>
+      <sprite>sprites\Basement_Window</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\Floor_Tiles_Model_1</background>
     <background>background\Painting_Model_1</background>
     <background>background\Wall_Model_1</background>
+    <background>background\background3</background>
+    <background>background\black</background>
+    <background>background\Painting_Model_2</background>
+    <background>background\Painting_Model_3</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_money_popup</path>
@@ -150,6 +158,8 @@
       <object>objects\obj_windows</object>
       <object>objects\obj_doors</object>
       <object>objects\obj_clock</object>
+      <object>objects\obj_shop_stand</object>
+      <object>objects\obj_base_window</object>
     </objects>
   </objects>
   <rooms name="rooms">

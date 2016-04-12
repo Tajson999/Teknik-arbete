@@ -86,6 +86,8 @@
       <sprite>sprites\door_model_2</sprite>
       <sprite>sprites\spr_Shop_Stand_1</sprite>
       <sprite>sprites\Basement_Window</sprite>
+      <sprite>sprites\spr_purple_side</sprite>
+      <sprite>sprites\spr_brown_side</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -161,6 +163,8 @@
       <object>objects\obj_clock</object>
       <object>objects\obj_shop_stand</object>
       <object>objects\obj_base_window</object>
+      <object>objects\obj_new_Sshelf_p</object>
+      <object>objects\obj_new_Sshelf_r</object>
     </objects>
   </objects>
   <rooms name="rooms">

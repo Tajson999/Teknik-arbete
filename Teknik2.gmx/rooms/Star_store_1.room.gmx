@@ -51,21 +51,24 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_player_gamma" x="64" y="63" name="inst_E2BA03A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_var_creator" x="63" y="0" name="inst_D130AAB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_time" x="31" y="0" name="inst_947FAC6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu" x="0" y="0" name="inst_C6EBA22E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cheat" x="47" y="0" name="inst_DFCCEF73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_resources" x="79" y="0" name="inst_DAF8E1D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Start_store_manager" x="15" y="0" name="inst_9F1F75A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shop_counter" x="64" y="88" name="inst_C7B0B2E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_costumer_beta" x="64" y="80" name="inst_343C0CC5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_costumer2_beta" x="128" y="132" name="inst_C996BF67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_new_shelf_r" x="94" y="96" name="inst_3740482C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_new_shelf_r" x="176" y="96" name="inst_4B1CF3B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_new_shelf_p" x="176" y="136" name="inst_204CABA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_new_shelf_p" x="112" y="136" name="inst_0AEFCAF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object39" x="220" y="164" name="inst_4E231427" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_doors" x="164" y="30" name="inst_3DCCED88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_base_window" x="197" y="24" name="inst_7AC46A07" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_shop_stand" x="202" y="41" name="inst_46610D0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_new_Sshelf_p" x="16" y="85" name="inst_A612DF4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_new_Sshelf_r" x="16" y="115" name="inst_61399B0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_test" x="341" y="535" name="inst_E1D5E4DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shelf" x="176" y="128" name="inst_1A0B29EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shelf" x="96" y="128" name="inst_5669F9DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_entrance" x="175" y="77" name="inst_586017DF" locked="0" code="" scaleX="0.390625" scaleY="0.459459453821182" colour="4294967295" rotation="0"/>
+    <instance objName="obj_customer" x="176" y="75" name="inst_260394E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button_skilltree" x="54" y="170" name="inst_81BB6113" locked="0" code="" scaleX="0.220472440123558" scaleY="0.333333343267441" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button_store" x="22" y="170" name="inst_036C7A9D" locked="0" code="" scaleX="0.217054262757301" scaleY="0.328125" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="57" y="115" name="inst_8EA86067" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mouse" x="165" y="145" name="inst_6B6DC1F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mouse" x="119" y="243" name="inst_F1D211CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Floor_Tiles_Model_1" x="208" y="68" w="32" h="32" xo="0" yo="0" id="10000179" name="inst_F85ACA7B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -152,7 +155,6 @@
     <tile bgName="Painting_Model_1" x="22" y="24" w="24" h="16" xo="0" yo="0" id="10000208" name="inst_F0974136" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Painting_Model_2" x="82" y="24" w="34" h="24" xo="0" yo="0" id="10000209" name="inst_715BE31E" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Painting_Model_3" x="56" y="24" w="16" h="24" xo="0" yo="0" id="10000210" name="inst_3CBA9E5F" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Support_Pillar_1" x="158" y="84" w="18" h="48" xo="0" yo="0" id="10000214" name="inst_6761CE03" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

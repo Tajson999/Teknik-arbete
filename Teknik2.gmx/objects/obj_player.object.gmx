@@ -227,7 +227,7 @@ refill = false
                 }
             }
             if(point_distance(x,y,go_x,go_y) &lt;= (6*global.time_multi)){
-                speed = 0
+                speed = 0.5;
                 x = go_x
                 y = go_y
                 image_speed = 0

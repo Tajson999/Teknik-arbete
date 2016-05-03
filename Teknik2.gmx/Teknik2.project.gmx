@@ -168,9 +168,9 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Star_store_1</room>
     <room>rooms\Start_store</room>
     <room>rooms\Graphics_Test_Room</room>
-    <room>rooms\Star_store_1</room>
     <room>rooms\m_menu</room>
     <room>rooms\m_store</room>
     <room>rooms\rm_skill_tree</room>

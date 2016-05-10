@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>skill = string(global.skill_points)
-draw_text(view_xview+848,view_yview+32, "Skill points: " + skill)
+draw_text(view_xview+868,view_yview+96, "Skill points: " + skill)
 </string>
           </argument>
         </arguments>

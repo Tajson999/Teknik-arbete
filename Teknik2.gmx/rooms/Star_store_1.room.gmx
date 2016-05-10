@@ -65,7 +65,7 @@
     <instance objName="obj_entrance" x="175" y="77" name="inst_586017DF" locked="0" code="" scaleX="0.390625" scaleY="0.459459453821182" colour="4294967295" rotation="0"/>
     <instance objName="obj_customer" x="176" y="75" name="inst_260394E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button_skilltree" x="54" y="170" name="inst_81BB6113" locked="0" code="" scaleX="0.220472440123558" scaleY="0.333333343267441" colour="4294967295" rotation="0"/>
-    <instance objName="obj_button_store" x="22" y="170" name="inst_036C7A9D" locked="0" code="" scaleX="0.217054262757301" scaleY="0.328125" colour="4294967295" rotation="0"/>
+    <instance objName="obj_button_store" x="20" y="174" name="inst_036C7A9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="57" y="115" name="inst_8EA86067" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mouse" x="165" y="145" name="inst_6B6DC1F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mouse" x="119" y="243" name="inst_F1D211CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

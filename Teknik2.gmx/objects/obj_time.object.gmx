@@ -125,7 +125,7 @@ if(alarm[0] == (-1) &amp;&amp; global.time_stop == false){
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -155,22 +155,22 @@ switch(global.season){
 }
 
 if global.time_multi == 1{
-draw_triangle(view_xview+108, view_yview+7, view_xview+108, view_yview+17, view_xview+120, view_yview+12,false)
+draw_triangle(view_xview+172, view_yview+98, view_xview+172, view_yview+108, view_xview+184, view_yview+103,false)
 }
 if global.time_multi == 2{
-draw_triangle(view_xview+108, view_yview+7, view_xview+108, view_yview+17, view_xview+120, view_yview+12,false)
-draw_triangle(view_xview+122, view_yview+7, view_xview+122, view_yview+17, view_xview+134, view_yview+12,false)
+draw_triangle(view_xview+172, view_yview+98, view_xview+172, view_yview+108, view_xview+184, view_yview+103,false)
+draw_triangle(view_xview+186, view_yview+98, view_xview+186, view_yview+108, view_xview+198, view_yview+103,false)
 
 }
 if global.time_multi == 3{
-draw_triangle(view_xview+108, view_yview+7, view_xview+108, view_yview+17, view_xview+120, view_yview+12,false)
-draw_triangle(view_xview+122, view_yview+7, view_xview+122, view_yview+17, view_xview+134, view_yview+12,false)
-draw_triangle(view_xview+136, view_yview+7, view_xview+136, view_yview+17, view_xview+148, view_yview+12,false)
+draw_triangle(view_xview+172, view_yview+98, view_xview+172, view_yview+108, view_xview+184, view_yview+103,false)
+draw_triangle(view_xview+186, view_yview+98, view_xview+186, view_yview+108, view_xview+198, view_yview+103,false)
+draw_triangle(view_xview+200, view_yview+98, view_xview+200, view_yview+108, view_xview+212, view_yview+103,false)
 
 }
 
-draw_text(view_xview+5, view_yview+21, global.season_word + " Day: " + season_day)
-draw_text(view_xview+5,view_yview+5,"Time: " + show_hours + ":" + show_minutes);//draw variables
+draw_text(view_xview+64, view_yview+64, global.season_word + " Day: " + season_day)
+draw_text(view_xview+64,view_yview+96,"Time: " + show_hours + ":" + show_minutes);//draw variables
 </string>
           </argument>
         </arguments>

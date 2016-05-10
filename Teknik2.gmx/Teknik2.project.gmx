@@ -143,11 +143,12 @@
     </objects>
     <objects name="objects">
       <object>objects\obj_customer</object>
+      <object>objects\obj_customer2</object>
       <object>objects\obj_door</object>
       <object>objects\obj_desk</object>
       <object>objects\obj_player</object>
-      <object>objects\obj_entrance</object>
       <object>objects\obj_box</object>
+      <object>objects\obj_entrance</object>
       <object>objects\obj_shelf</object>
     </objects>
     <objects name="In Prog. objects">

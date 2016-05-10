@@ -171,7 +171,7 @@ if (global.workermax &lt; global.currentworker){
           <argument>
             <kind>1</kind>
             <string>money = string(global.money)
-draw_text(view_xview+864,view_yview+16, "Money: " + money)
+draw_text(view_xview+816,view_yview+64, "Money: " + money)
 </string>
           </argument>
         </arguments>

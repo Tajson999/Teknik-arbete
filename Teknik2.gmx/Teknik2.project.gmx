@@ -78,6 +78,7 @@
       <sprite>sprites\spr_PC_desk</sprite>
       <sprite>sprites\spr_costumer_beta</sprite>
       <sprite>sprites\spr_costumer2_beta</sprite>
+      <sprite>sprites\spr_emoticons</sprite>
       <sprite>sprites\spr_new_shelfs</sprite>
       <sprite>sprites\spr_new_shelf</sprite>
       <sprite>sprites\spr_windows</sprite>
@@ -99,6 +100,7 @@
     <background>background\Painting_Model_2</background>
     <background>background\Painting_Model_3</background>
     <background>background\Support_Pillar_1</background>
+    <background>background\Town_Map_Title</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_money_popup</path>
@@ -175,6 +177,7 @@
     <room>rooms\m_menu</room>
     <room>rooms\m_store</room>
     <room>rooms\rm_skill_tree</room>
+    <room>rooms\Title_screen</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

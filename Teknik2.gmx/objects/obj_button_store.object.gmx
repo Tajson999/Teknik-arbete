@@ -50,7 +50,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(collision_rectangle(x,y,x+128,y+64,obj_mouse,true,false) != noone &amp;&amp; mouse_check_button_released(mb_left) &amp;&amp; global.skill_store == true){
+            <string>if(collision_rectangle(x,y,x+31,y+19,obj_mouse,true,false) != noone &amp;&amp; mouse_check_button_released(mb_left) &amp;&amp; global.skill_store == true){
     global.time_stop = true;
     global.previous_room = room_get_name(room)
     room_goto(m_store)

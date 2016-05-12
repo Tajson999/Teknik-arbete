@@ -68,7 +68,7 @@ global.stats_days = 0
 global.player_behind_desk = false
 
 //create grid
-global.grid = mp_grid_create(0,0, room_width / 16, room_height / 16, 16,16)
+global.grid = mp_grid_create(0,0, room_width / 8, room_height / 8, 8,8)
 // add thing to grid
 mp_grid_add_instances(global.grid, obj_desk, true)
 mp_grid_add_instances(global.grid, obj_shelf, true)

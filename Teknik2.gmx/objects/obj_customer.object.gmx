@@ -157,7 +157,7 @@ if(going_to_exit == true &amp;&amp; point_distance(x,y,obj_entrance.x,obj_entran
                     path_start(costumer_path, 3*global.time_multi,path_action_stop , false) //start path
                 }
             }else{ //if you are not going to a new shelf
-                mp_grid_path(global.grid, costumer_path, x, y, obj_shop_counter.x, obj_shop_counter.y , true) //set path to coutner
+                mp_grid_path(global.grid, costumer_path, x, y, obj_shop_counter.x, obj_shop_counter.y+8 , true) //set path to coutner
                 path_start(costumer_path, 3*global.time_multi,path_action_stop , true) // start path
                 if(done = false){ 
                     alarm[0] = 10 // sets alarm to make going_out true
@@ -184,7 +184,7 @@ if(going_to_exit == true &amp;&amp; point_distance(x,y,obj_entrance.x,obj_entran
                 }
             }
         }
-        if(going_out == true &amp;&amp; point_distance(x,y, obj_shop_counter.x, obj_shop_counter.y) &lt;= 4){
+        if(going_out == true &amp;&amp; point_distance(x,y, obj_shop_counter.x, obj_shop_counter.y) &lt;= 8){
                 mp_grid_path(global.grid, costumer_path, x, y, obj_entrance.x, obj_entrance.y , true) 
                 path_start(costumer_path, 3*global.time_multi,path_action_stop , true)
                 

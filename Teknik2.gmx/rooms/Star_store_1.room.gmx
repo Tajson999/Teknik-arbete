@@ -66,8 +66,7 @@
     <instance objName="obj_customer" x="176" y="75" name="inst_260394E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button_skilltree" x="54" y="170" name="inst_81BB6113" locked="0" code="" scaleX="0.220472440123558" scaleY="0.333333343267441" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="57" y="115" name="inst_8EA86067" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_mouse" x="165" y="145" name="inst_6B6DC1F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_mouse" x="119" y="243" name="inst_F1D211CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mouse" x="224" y="169" name="inst_6B6DC1F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_button_store" x="20" y="171" name="inst_4F189C41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>

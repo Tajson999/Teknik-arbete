@@ -25,9 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.skill_store == true){
+            <string>image_speed = 0
+
+if(global.skill_store == true){
     sprite_index = spr_button_store
 }
+
 </string>
           </argument>
         </arguments>

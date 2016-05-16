@@ -90,6 +90,7 @@
       <sprite>sprites\spr_purple_side</sprite>
       <sprite>sprites\spr_brown_side</sprite>
     </sprites>
+    <sprite>sprites\spr_collision</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Floor_Tiles_Model_1</background>
@@ -169,6 +170,7 @@
       <object>objects\obj_new_Sshelf_p</object>
       <object>objects\obj_new_Sshelf_r</object>
     </objects>
+    <object>objects\obj_collision</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start_store_1</room>

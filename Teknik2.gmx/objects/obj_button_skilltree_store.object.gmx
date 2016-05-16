@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(collision_rectangle(x,y,x+191,y+63,obj_mouse,true,false) != noone &amp;&amp; mouse_check_button_released(mb_left) &amp;&amp; global.skill_store == false &amp;&amp; global.skill_points &gt;= 1){
+            <string>if(collision_rectangle(x,y,x+62,y+19,obj_mouse,true,false) != noone &amp;&amp; mouse_check_button_released(mb_left) &amp;&amp; global.skill_store == false &amp;&amp; global.skill_points &gt;= 1){
     
     
     global.skill_points -= 1;

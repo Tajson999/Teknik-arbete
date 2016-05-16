@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(collision_rectangle(x,y,x+256,y+128,obj_mouse,true,false) != noone &amp;&amp; mouse_check_button_released(mb_left)){
+            <string>if(collision_rectangle(x,y,x+62,y+19,obj_mouse,true,false) != noone &amp;&amp; mouse_check_button_released(mb_left)){
         if(global.money &gt;= 2000 &amp;&amp; global.start_store_shelves_A == false){
             global.money -= 2000
             with(obj_Start_store_manager){

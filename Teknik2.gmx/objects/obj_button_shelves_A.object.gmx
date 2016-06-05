@@ -32,7 +32,11 @@
                 alarm[0] = 2
             }
             global.start_store_shelves_A = true
-            room_goto(Start_store)
+            global.time_stop = false;
+            room_goto(Start_store_1)
+        }else if(global.money &lt; 2000 &amp;&amp; global.start_store_shelves_A == false){
+        
+                instance_create(x,y,obj_need_more_money_popup)
         }
 }
 </string>

@@ -70,6 +70,7 @@
       <sprite>sprites\spr_money_popup</sprite>
       <sprite>sprites\spr_skills</sprite>
       <sprite>sprites\spr_test_convert_to_skill</sprite>
+      <sprite>sprites\spr_need_morer_money</sprite>
     </sprites>
     <sprites name="In Prog. Art">
       <sprite>sprites\spr_shop_counter</sprite>
@@ -133,6 +134,7 @@
       <object>objects\obj_speak_unhappy</object>
       <object>objects\obj_text_skilltree</object>
       <object>objects\obj_text_convert_to_skill</object>
+      <object>objects\obj_need_more_money_popup</object>
     </objects>
     <objects name="controlers etc">
       <object>objects\obj_menu</object>

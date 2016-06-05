@@ -26,17 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///shelves C
-instance_create(288,544,obj_shelf)
-instance_create(288,640,obj_shelf)
-instance_create(288,736,obj_shelf)
 
-instance_create(416,544,obj_shelf)
-instance_create(416,640,obj_shelf)
-instance_create(416,736,obj_shelf)
-
-instance_create(544,544,obj_shelf)
-instance_create(544,640,obj_shelf)
-instance_create(544,736,obj_shelf)
 
 </string>
           </argument>
@@ -62,19 +52,7 @@ instance_create(544,736,obj_shelf)
             <kind>1</kind>
             <string>/// shelves B
 //first row
-instance_create(735,500,obj_shelf)
-instance_create(863,500,obj_shelf)
-instance_create(991,500,obj_shelf)
-//second row
-instance_create(735,600,obj_shelf)
-instance_create(863,600,obj_shelf)
-instance_create(991,600,obj_shelf)
-
-//third row
-instance_create(735,700,obj_shelf)
-instance_create(863,700,obj_shelf)
-instance_create(991,700,obj_shelf)
-
+instance_create(97,64,obj_shelf)
 </string>
           </argument>
         </arguments>
@@ -99,18 +77,7 @@ instance_create(991,700,obj_shelf)
             <kind>1</kind>
             <string>/// shelves A
 //first row
-instance_create(128,128,obj_shelf)
-instance_create(224,128,obj_shelf)
-instance_create(320,128,obj_shelf)
-//second row
-instance_create(128,224,obj_shelf)
-instance_create(224,224,obj_shelf)
-instance_create(320,224,obj_shelf)
-
-//third row
-instance_create(128,320,obj_shelf)
-instance_create(224,320,obj_shelf)
-instance_create(320,320,obj_shelf)
+instance_create(80,128,obj_shelf)
 
 </string>
           </argument>

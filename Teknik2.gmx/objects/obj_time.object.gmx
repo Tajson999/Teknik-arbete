@@ -68,7 +68,8 @@ if global.minutes==0 &amp;&amp; global.hours==24 // check if countdown has reach
     if(global.player_behind_desk == true){
         global.income += 100
     }
-    global.money = global.money - global.cost_food_for_you
+    global.money = global.money - global.cost_food_for_you - (global.daily_goods*20) - 500
+    global.daily_goods = 0
     global.season_time += 1
     global.stats_days += 1
 }

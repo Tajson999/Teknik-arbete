@@ -145,6 +145,7 @@
       <object>objects\obj_var_creator</object>
       <object>objects\obj_player_hitbox</object>
       <object>objects\obj_resources</object>
+      <object>objects\obj_cost_for_goods</object>
     </objects>
     <objects name="objects">
       <object>objects\obj_customer</object>

@@ -95,6 +95,15 @@ global.skill_points = 10;
 
 global.skill_store = false
 //global.skill_what the skill is | false means not unlocked true means unlocked
+
+//global.cost_goods is how much one of your wares will cost
+global.cost_goods = 20
+
+//global.spawn_chance is how to chance to spawn customer is influensed (random(2)-gloal.spawn_chance &gt;= 1)
+global.spawn_chance = 0
+
+//daily goods counter
+global.daily_goods = 0
 </string>
           </argument>
         </arguments>

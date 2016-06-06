@@ -176,7 +176,8 @@ if(going_to_exit == true &amp;&amp; point_distance(x,y,obj_entrance.x,obj_entran
                     with(near_shelf){ // with the nearest shelf
                         if(image_index &gt; 0){ // remove 1 stack on shelf
                             image_index -= 1
-                            global.money += 20
+                            global.money += varor*global.cost_goods
+                            global.daily_goods += 1
                             instance_create(x,y-64,obj_money_popup_20)
                         }else{
                             //instance_create(x+16,y-32,obj_speak_unhappy)//create feeling
@@ -187,7 +188,8 @@ if(going_to_exit == true &amp;&amp; point_distance(x,y,obj_entrance.x,obj_entran
             }
         }
         if(going_out == true &amp;&amp; point_distance(x,y, obj_shop_counter.x, obj_shop_counter.y) &lt;= 8){
-                global.money += varor*20
+                global.money += varor*global.cost_goods
+                global.daily_goods += 1
                 mp_grid_path(global.grid, costumer_path, x, y, obj_entrance.x, obj_entrance.y , true) 
                 path_start(costumer_path, 3*global.time_multi,path_action_stop , true)
                 
